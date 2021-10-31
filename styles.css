@@ -38,7 +38,12 @@
     width: 500px;
     height: 500px;
     border-radius: 10%;
-    background-color: #C4C4C4;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(images/creativity.jpg);
+    background-position: -300px;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    filter: brightness(100%);
     transition: 1s;
 }
 
@@ -54,12 +59,33 @@
     /* background: #C4C4C4; */
 }
 
-.ac1txt:hover{
-    color: white;
+.shadow{
+    height: 500px;
+    width: 500px;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 1s;
+    position: absolute;
 }
 
+.ac1txt:hover + .shadow { background-color: black; }
+
+/* 
+.shadow:hover{
+    background-color: rgba(0, 0, 0, 0.408);
+} */
+
+.ac1txt:hover{
+    color: rgb(255, 255, 255);
+    filter: brightness(100%);
+}
+
+
 .Article1:hover{
-    background: rgb(64, 64, 64);
+    background-blend-mode: saturation;
+    backdrop-filter: inherit;
+    background-size: 220%;
+    background-repeat: no-repeat;
 }
 
 
