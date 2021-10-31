@@ -13,7 +13,7 @@
 .toparticles {
     position: relative;
     height: 900px;
-    background: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, #434343 10%, black 100%);
 }
 
 
@@ -21,12 +21,14 @@
     color: yellow;
     position: relative;
     padding-top: 10px;
-    background: black;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
     font-size: 70px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    transition: 1s;
 }
+
 
 
 .Article1{
@@ -37,6 +39,7 @@
     height: 500px;
     border-radius: 10%;
     background-color: #C4C4C4;
+    transition: 1s;
 }
 
 .ac1txt{
@@ -47,8 +50,18 @@
     font-size: 60px;
     color: black;
     text-shadow: 5px 5px 20px rgb(66, 66, 66);
+    transition: 1s;
     /* background: #C4C4C4; */
 }
+
+.ac1txt:hover{
+    color: white;
+}
+
+.Article1:hover{
+    background: rgb(64, 64, 64);
+}
+
 
 .Article2{
     position: absolute;
@@ -57,7 +70,8 @@
     width: 250px;
     height: 250px;
     border-radius: 10%;
-    background-color: #C4C4C4;;
+    background-color: #C4C4C4;
+    transition: 1s;
 }
 
 
@@ -70,7 +84,16 @@
     font-size: 25px;
     color: black;
     text-shadow: 5px 5px 10px rgb(66, 66, 66);
+    transition: 1s;
     /* background: #C4C4C4; */
+}
+
+.ac2txt:hover{
+    color: white;
+}
+
+.Article2:hover{
+    background: rgb(64, 64, 64);
 }
 
 
@@ -81,7 +104,8 @@
     width: 250px;
     height: 200px;
     border-radius: 10%;
-    background-color: #C4C4C4;;
+    background-color: #C4C4C4;
+    transition: 1s;
 }
 
 .ac3txt{
@@ -93,7 +117,16 @@
     font-size: 25px;
     color: black;
     text-shadow: 5px 5px 10px rgb(66, 66, 66);
+    transition: 1s;
     /* background: #C4C4C4; */
+}
+
+.ac3txt:hover{
+    color: white;
+}
+
+.Article3:hover{
+    background: rgb(64, 64, 64);
 }
 
 
@@ -104,7 +137,8 @@
     width: 250px;
     height: 250px;
     border-radius: 10%;
-    background-color: #C4C4C4;;
+    background-color: #C4C4C4;
+    transition: 1s;
 }
 
 
@@ -117,5 +151,54 @@
     font-size: 25px;
     color: black;
     text-shadow: 5px 5px 10px rgb(66, 66, 66);
+    transition: 1s;
     /* background: #C4C4C4; */
+}
+
+
+.ac4txt:hover{
+    color: white;
+}
+
+.Article4:hover{
+    background: rgb(64, 64, 64);
+}
+
+
+.Topmore{
+    position: absolute;
+    bottom: 250px;
+    left: 970px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    background-color: #ffffff;
+    transition: 1s;
+}
+
+a{
+    text-decoration: none;
+}
+
+.more{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    text-decoration: overline;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 10px rgb(66, 66, 66);
+    transition: 1s;
+}
+
+
+.more:hover{
+    color: rgb(255, 255, 255);
+}
+
+.Topmore:hover{
+    background: rgb(0, 0, 0);
 }
