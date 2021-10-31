@@ -5,14 +5,15 @@
     /* background: rgba(23, 23, 23, 0.93);    */
    }
 
-/* 
+
 .hero{
-    height: 900px;
-} */
+    height: 762px;
+    background-color: black;
+}
 
 .toparticles {
     position: relative;
-    height: 900px;
+    height: 762px;
     background-color: rgb(27, 27, 27);
 }
 
@@ -90,8 +91,8 @@
 
 
 .Article2{
-    position: absolute;
-    bottom: 510px;
+    position: relative;
+    bottom: 450px;
     left: 670px;
     width: 250px;
     height: 250px;
@@ -146,8 +147,8 @@
 
 
 .Article3{
-    position: absolute;
-    bottom: 250px;
+    position: relative;
+    bottom: 400px;
     left: 670px;
     width: 250px;
     height: 200px;
@@ -201,8 +202,8 @@
 
 
 .Article4{
-    position: absolute;
-    bottom: 510px;
+    position: relative;
+    bottom: 900px;
     left: 970px;
     width: 250px;
     height: 250px;
@@ -240,8 +241,8 @@
 
 
 .Topmore{
-    position: absolute;
-    bottom: 250px;
+    position: relative;
+    bottom: 850px;
     left: 970px;
     width: 250px;
     height: 200px;
