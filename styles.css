@@ -63,17 +63,15 @@
     height: 500px;
     width: 500px;
     border-radius: 10%;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.129);
     transition: 1s;
     position: absolute;
 }
 
-.ac1txt:hover + .shadow { background-color: black; }
 
-/* 
 .shadow:hover{
-    background-color: rgba(0, 0, 0, 0.408);
-} */
+    background-color: rgba(255, 255, 255, 0);
+}
 
 .ac1txt:hover{
     color: rgb(255, 255, 255);
