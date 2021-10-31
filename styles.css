@@ -13,7 +13,7 @@
 .toparticles {
     position: relative;
     height: 900px;
-    background-image: linear-gradient(to right, #434343 10%, black 100%);
+    background-color: rgb(27, 27, 27);
 }
 
 
@@ -73,6 +73,8 @@
     background-color: rgba(255, 255, 255, 0);
 }
 
+
+
 .ac1txt:hover{
     color: rgb(255, 255, 255);
     filter: brightness(100%);
@@ -95,6 +97,11 @@
     height: 250px;
     border-radius: 10%;
     background-color: #C4C4C4;
+    background-image: url(images/happy.jpg);
+    background-position: -150px    0px;
+    background-size: 160%;
+    background-repeat: no-repeat;
+    filter: brightness(250%);
     transition: 1s;
 }
 
@@ -112,12 +119,29 @@
     /* background: #C4C4C4; */
 }
 
+.shadow2{
+    height: 250px;
+    width: 250px;
+    border-radius: 10%;
+    background-color: rgba(12, 12, 12, 0.598);
+    transition: 1s;
+    position: absolute;
+}
+
+
+.shadow2:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
 .ac2txt:hover{
     color: white;
 }
 
 .Article2:hover{
-    background: rgb(64, 64, 64);
+    background-size: 180%;
+    background-position-x: -150px;
 }
 
 
@@ -129,6 +153,10 @@
     height: 200px;
     border-radius: 10%;
     background-color: #C4C4C4;
+    background-image: url(images/zen.jpg);
+    background-size: 160%;
+    background-position: -10px -20px;
+    background-repeat: no-repeat;
     transition: 1s;
 }
 
@@ -145,12 +173,30 @@
     /* background: #C4C4C4; */
 }
 
+
+.shadow3{
+    height: 200px;
+    width: 250px;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0.129);
+    transition: 1s;
+    position: absolute;
+}
+
+
+.shadow3:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
 .ac3txt:hover{
     color: white;
 }
 
 .Article3:hover{
-    background: rgb(64, 64, 64);
+    background-size: 200%;
+    background-position: -100px -90px;
 }
 
 
@@ -162,6 +208,10 @@
     height: 250px;
     border-radius: 10%;
     background-color: #C4C4C4;
+    background-image: url(images/entertainment.jpg);
+    background-size: 160%;
+    background-position: -50px -20px;
+    background-repeat: no-repeat;
     transition: 1s;
 }
 
@@ -185,7 +235,7 @@
 }
 
 .Article4:hover{
-    background: rgb(64, 64, 64);
+    background-size: 180%;
 }
 
 
@@ -194,14 +244,22 @@
     bottom: 250px;
     left: 970px;
     width: 250px;
-    height: 250px;
+    height: 200px;
     border-radius: 10%;
     background-color: #ffffff;
+    background-image: url(images/more.jpg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position-x: -100px;
     transition: 1s;
 }
 
 a{
     text-decoration: none;
+    height: 200px;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 .more{
@@ -213,16 +271,19 @@ a{
     right: 10px;
     font-size: 30px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    text-shadow: 5px 5px 10px rgb(66, 66, 66);
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 10px rgb(54, 54, 54);
     transition: 1s;
 }
 
 
 .more:hover{
     color: rgb(255, 255, 255);
+    font-size: 410%;
 }
 
 .Topmore:hover{
-    background: rgb(0, 0, 0);
+    background-size: 180%;
+    background-position-x: -150px;
+    background-position-y: -20px;
 }
