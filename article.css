@@ -64,7 +64,7 @@
     margin:0 auto;
     width: 60%;
     column-count: 1;
-    background-color: rgba(23, 23, 23, 0.93);
+    background-color: rgba(23, 23, 23, 0.748);
 
 
 }
@@ -74,4 +74,23 @@
     text-align: justify;
     font-size: 20px;
     background-color: rgba(255, 255, 255, 0);
+}
+
+
+.emptyplaceholder{
+    height: 100px;
+}
+
+.devider{
+    border-top: 8px solid rgb(208, 255, 0);
+    border-radius: 5px;
+    position: relative;
+    width: 1000px;
+    left: 250px;
+}
+
+
+.instragrame{
+    width: 100px;
+    height: 100px;
 }
