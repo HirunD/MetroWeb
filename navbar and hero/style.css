@@ -133,7 +133,7 @@ nav ul{
     font-family:efa;
     font-size:60px;
     color:white;
-    padding:175px 0 15px 0;
+    padding:160px 0 15px 0;
     width:fit-content;
     margin: 0 auto;
 }
@@ -181,3 +181,21 @@ form {
     height: 24px;
     padding: 10px;
   }
+.app img {
+    
+    width:200px;
+    background-size: cover;
+}
+.app h4{
+    font-size:20px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px;
+    text-align:center;
+    padding-bottom:20px;
+}
+.app {
+    display:block;
+    float:right;
+    margin-right:30px;
+}
