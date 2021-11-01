@@ -48,11 +48,11 @@
 
 .article{
     position: relative;
-    left: 300px;
-    right: 100px;
-    width: 900px;
+    margin:0 auto;
+    width: 60%;
     column-count: 1;
     background-color: rgba(0, 0, 0, 0.714);
+
 
 }
 

@@ -62,7 +62,7 @@ nav ul{
     cursor: pointer;
 }
 .content {
-    opacity:0;
+    visibility:hidden;
     position:absolute;
     width:100%;
     overflow:auto;
@@ -71,10 +71,12 @@ nav ul{
     padding:20px;
     background-color:white;
     font-size:15px;
-    transition:opacity 800ms;
+    transition:visibility 1s;
+    
 }
 .dropdown:hover .content{
-    opacity:1;
+    visibility:visible;
+    
 }
 .dropdown:hover li{
     border-color:#f2f2f2;
@@ -119,7 +121,7 @@ nav ul{
     height:30px;
     background-image: url("Images/instagrme no color.svg");
     background-size:cover;
-    transition:background-image 200ms;
+    transition:background-image 300ms;
 }
 .insta:hover{
     background-image: url("Images/instagrame.svg");
@@ -129,7 +131,7 @@ nav ul{
     height:30px;
     background-image: url("Images/twitter no color.svg");
     background-size:cover;
-    transition:background-image 200ms;
+    transition:background-image 300ms;
 }
 .twitter:hover{
     background-image: url("Images/twitter.svg");
@@ -171,11 +173,16 @@ form {
     flex-direction: row;
     align-items: center;
     margin:40px auto;
+    transition:background-color 200ms;
+    box-shadow:5px 7px 8px #111;
+  }
+  form:hover{
+    background-color:rgba(255, 255, 255,0.7);
   }
   input {
     all: unset;
-    font: 16px system-ui;
-    color: #fff;
+    font: 16px arial;
+    color: #111;
     height: 100%;
     width: 100%;
     padding: 6px 10px;
