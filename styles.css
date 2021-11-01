@@ -16,8 +16,10 @@
 }
 
 .toparticles {
+    overflow: hidden;
     position: relative;
     height: 762px;
+    width: 100%;
     background-color: rgb(27, 27, 27);
 }
 
@@ -349,6 +351,7 @@ ul{
 .writers {
     position: relative;
     height: 762px;
+    overflow: hidden;
     background-color: rgb(27, 27, 27);
 }
 
@@ -630,3 +633,83 @@ a{
     background-color: rgb(2, 2, 2);
 }
 
+
+/* small screens */
+
+@media only screen and (max-width:1229px) {
+    
+.writers {
+    position: relative;
+    height: 1500px;
+    overflow: hidden;
+}
+
+.writer1{
+    position: relative;
+    left: 20px;
+}
+
+.writer2{
+    position: relative;
+    left: 800px;
+    bottom: 100px;
+}
+
+.writer3{
+    position: relative;
+    left: 500px;
+    bottom: 0px;
+}
+
+.writer4{
+    position: relative;
+    bottom: 0px;
+    left: 20px;
+}
+
+.Topmorewriter{
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+        left: 670px;
+}
+
+
+   
+.toparticles {
+    position: relative;
+    height: 1500px;
+    overflow: hidden;
+}
+
+.Article1{
+    position: relative;
+    left: 20px;
+}
+
+.Article2{
+    position: relative;
+    left: 800px;
+    bottom: 100px;
+}
+
+.Article3{
+    position: relative;
+    left: 500px;
+    bottom: 0px;
+}
+
+.Article4{
+    position: relative;
+    bottom: 0px;
+    left: 20px;
+}
+
+.Topmore{
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+        left: 670px;
+}
+
+}
