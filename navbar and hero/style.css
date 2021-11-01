@@ -119,7 +119,7 @@ nav ul{
     height:30px;
     background-image: url("Images/instagrme no color.svg");
     background-size:cover;
-    transition:background-image 200ms;
+    transition:background-image 500ms;
 }
 .insta:hover{
     background-image: url("Images/instagrame.svg");
