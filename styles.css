@@ -320,10 +320,12 @@ a{
 
 ul{
     padding: 10px;
+    padding-left: 250px;
+    align-items: center;
 }
 
-.c1{
-    font-size: 40px;
+.c{
+    font-size: 60px;
     display:inline-block;
     text-transform: capitalize;
     color: black;
@@ -335,37 +337,10 @@ ul{
     margin-bottom: 50px;
     text-align: center;
     align-items: baseline;
+    transition: 0.5s;
 }
 
-
-
-
-.c2{
-    font-size: 40px;
-    color: black;
-    background-color: white;
-    width: 80%;
-    border-radius: 238px;
-    padding-left: 15px;
-    margin-bottom: 50px;
-}
-
-.c3{
-    font-size: 40px;
-    color: black;
-    background-color: white;
-    width: 80%;
-    border-radius: 238px;
-    padding-left: 15px;
-    margin-bottom: 50px;
-}
-
-.c4{
-    font-size: 40px;
-    color: black;
-    background-color: white;
-    width: 80%;
-    border-radius: 238px;
-    padding-left: 15px;
-    margin-bottom: 50px;
+.c:hover{
+    color: white;
+    background-color: rgb(35, 35, 35);
 }
