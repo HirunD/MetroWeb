@@ -60,8 +60,6 @@ nav ul{
     position:relative;
     height:fit-content; 
     cursor: pointer;
-    
-    
 }
 .content {
     display:none;
@@ -73,6 +71,7 @@ nav ul{
     padding:20px;
     background-color:white;
     font-size:15px;
+
 }
 .dropdown:hover .content{
     display:block;
@@ -113,9 +112,25 @@ nav ul{
     margin-top:20px;
     margin-right:30px;
 }
-.media img {
-    background-size: cover;
-    width:100%;
+
+.insta{
+    display:block;
+    width:30px;
+    height:30px;
+    background-image: url("Images/instagrme no color.svg");
+    background-size:cover;
+}
+.insta:hover{
+    background-image: url("Images/instagrame.svg");
+}
+.twitter {
+    width:30px;
+    height:30px;
+    background-image: url("Images/twitter no color.svg");
+    background-size:cover;
+}
+.twitter:hover{
+    background-image: url("Images/twitter.svg");
 }
 .logo {
     width:50px;
