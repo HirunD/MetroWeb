@@ -9,6 +9,7 @@
 
 .bannersection{
     position: sticky;
+    z-index: 2;
     top: -500px;
 }
 
@@ -19,6 +20,7 @@
     height: 662px;
     text-align: center;
 }
+  
 
 .bannerimg{
     position: sticky;
@@ -59,6 +61,7 @@
     position: relative;
     margin:0 auto;
     width: 60%;
+    z-index: 0;
     column-count: 1;
     background-color: rgba(0, 0, 0, 0.714);
 
