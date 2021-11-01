@@ -36,6 +36,7 @@
 .bannerimg:hover{
     filter: brightness(100%);
     filter: grayscale(0%);
+    width: 1000px;
 }
 
 .byname{
