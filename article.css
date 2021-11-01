@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background: rgba(23, 23, 23, 0.93);   
+   }
+
+
+.bannersection{
+    position: sticky;
+    top: -500px;
+}
+
+
+.banner{
+    align-items: center;
+    width: 100%;
+    height: 662px;
+    text-align: center;
+}
+
+.bannerimg{
+    position: sticky;
+    top: -100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 100px;
+}
+
+.byname{
+    color: white;
+    position: relative;
+    right: 250px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.bannertitle{
+    position: relative;
+    font-size: 90px;
+    color: yellow;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+}
+
+
+.article{
+    position: relative;
+    left: 300px;
+    right: 100px;
+    width: 900px;
+    column-count: 1;
+    background-color: rgba(0, 0, 0, 0.714);
+
+}
+
+.articlepara{
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0);
+}
