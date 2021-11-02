@@ -172,8 +172,9 @@ nav ul{
 }
 form {
     background-color: rgba(255, 255, 255, 0.5);
-    width: 500px;
-    height: 44px;
+    color: rgb(72, 72, 72);
+    width: 700px;
+    height: 54px;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -184,9 +185,36 @@ form {
     transition:transform 800ms, background-color 800ms ease-in-out;
   }
   form:hover{
-    transform: scale(110%);
+    transform: scale(130%);
+    color: black;
     background-color:rgba(255, 255, 255,0.7);
   }
+
+
+  .explore{
+      position: relative;
+      font-size: 50px;
+      left: 650px;
+      height: fit-content;
+      align-self: center;
+      background-color: white;
+      padding: 10px;
+      background-size: cover;
+      width: fit-content;
+      margin:0 auto;
+      font-family: 'Montserrat', sans-serif;
+      color: black;
+      font-weight: 700;
+      transition: 1s;
+  }
+
+  .explore:hover{
+      background-color: rgb(117, 117, 255);
+      box-shadow: 0px 0px 108px #826ef5;
+      color: black;
+      transform: scale(110%);
+  }
+
   input {
     all: unset;
     font: 16px arial;
