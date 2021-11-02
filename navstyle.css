@@ -206,13 +206,14 @@ form {
       color: black;
       font-weight: 700;
       transition: 1s;
+      transform: scale(100%);
   }
 
   .explore:hover{
       background-color: rgb(117, 117, 255);
       box-shadow: 0px 0px 108px #826ef5;
-      color: black;
-      transform: scale(110%);
+      color: rgb(255, 255, 255);
+      font-size: 60px;
   }
 
   input {
