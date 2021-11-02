@@ -41,9 +41,11 @@ nav .links li{
     border:2px solid transparent;
     border-radius: 5px;
     padding:2px;
+    transition:transform 500ms, background-color 500ms, border-color 500ms ease-in-out;
 }
 
 nav .links li:hover{
+    transform:scale(110%);
     border-color:#f2f2f2;
     background-color: #03057c;
 }
@@ -71,7 +73,7 @@ nav ul{
     padding:20px;
     background-color:white;
     font-size:15px;
-    transition:visibility 1s;
+    transition:visibility 200ms;
     
 }
 .dropdown:hover .content{
@@ -79,6 +81,7 @@ nav ul{
     
 }
 .dropdown:hover li{
+    transform:scale(110%);
     border-color:#f2f2f2;
     background-color: #03057c;
 }
@@ -87,13 +90,15 @@ nav ul{
     padding:5px;
     color:black;
     font-family:arial;
-    
+    border-radius:5px;
+    transition:transform 500ms, background-color 500ms ease-in-out;
     
 }
 .content a:hover{
+    transform:scale(110%);
     color:white;
     background-color:#03057c;
-    border-radius:5px;
+    
 
 }
 .media ul li{
@@ -115,20 +120,20 @@ nav ul{
     height:30px;
     background-image: url("Images/instagrme no color.svg");
     background-size:cover;
-    transition:background-image 300ms;
+    transition:transform 500ms;
 }
 .insta:hover{
-    background-image: url("Images/instagrame.svg");
+    transform:scale(120%);
 }
 .twitter {
     width:30px;
     height:30px;
     background-image: url("Images/twitter no color.svg");
     background-size:cover;
-    transition:background-image 300ms;
+    transition:transform 500ms;
 }
 .twitter:hover{
-    background-image: url("Images/twitter.svg");
+    transform:scale(120%);
 }
 .logo {
     width:50px;
@@ -175,8 +180,10 @@ form {
     margin:40px auto;
     transition:background-color 200ms;
     box-shadow:5px 7px 8px #111;
+    transition:transform 500ms, background-color 500ms ease-in-out;
   }
   form:hover{
+    transform: scale(105%);
     background-color:rgba(255, 255, 255,0.7);
   }
   input {
