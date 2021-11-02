@@ -9,7 +9,7 @@
 #cursor{
     position: absolute;
     width: 50px;
-    rotate: 0deg;
+    rotate: 10deg;
     height: 50px;
     border: white;
     border-style: solid;
