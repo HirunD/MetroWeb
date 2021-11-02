@@ -3,8 +3,58 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    background: rgba(23, 23, 23, 0.93);   
+    background: rgba(23, 23, 23, 0.93); 
    }
+
+#cursor{
+    position: absolute;
+    width: 50px;
+    rotate: 0deg;
+    height: 50px;
+    border: white;
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    transition: 1s;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10;
+    backdrop-filter: invert(100%);
+    animation-name: example;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+}
+
+  @keyframes example {
+    0% {
+        width: 50px;
+        height: 50px;
+        rotate: 0deg;
+    }
+    25% {
+        width: 70px;
+        height: 50px;
+        rotate: 10deg;
+    }
+    50% {
+        width: 50px;
+        height: 50px;
+        rotate: 0deg;
+    }
+    75% {
+        width: 50px;
+        height: 70px;
+        rotate: 10deg;
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+        rotate: 0deg;
+    }
+  }
+
 
 
 .bannersection{
@@ -48,6 +98,7 @@
     position: relative;
     right: 250px;
     background-color: rgba(255, 255, 255, 0);
+    transition: 1s;
 }
 
 .bannertitle{
@@ -56,8 +107,12 @@
     color: yellow;
     background-color: rgba(255, 255, 255, 0);
     z-index: 1;
+    transition: 1s;
 }
 
+.byname:hover{
+    transform: scale(120%);
+}
 
 .article{
     position: relative;
@@ -65,8 +120,7 @@
     width: 60%;
     column-count: 1;
     background-color: rgba(23, 23, 23, 0.748);
-
-
+    backdrop-filter: blur(200px);
 }
 
 .articlepara{
@@ -74,6 +128,7 @@
     padding: 70px;
     font-size: 20px;
     background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
 }
 
 
