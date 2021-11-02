@@ -34,6 +34,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     transition: 1s;
+    text-shadow: 0px 0px 10px 100px black;
 }
 
 
@@ -52,7 +53,7 @@
     background-repeat: no-repeat;
     filter: brightness(100%);
     transition: 1s;
-
+    box-shadow: 0px 0px 100px black;
 }
 
 .ac1txt{
@@ -111,6 +112,7 @@
     background-repeat: no-repeat;
     filter: brightness(250%);
     transition: 1s;
+    box-shadow: 0px 0px 100px black;
 }
 
 
@@ -166,6 +168,7 @@
     background-position: -10px -20px;
     background-repeat: no-repeat;
     transition: 1s;
+    box-shadow: 0px 0px 100px black;
 }
 
 .ac3txt{
@@ -221,6 +224,7 @@
     background-position: -50px -20px;
     background-repeat: no-repeat;
     transition: 1s;
+    box-shadow: 0px 0px 100px black;
 }
 
 
@@ -260,6 +264,7 @@
     background-size: 150%;
     background-position-x: -100px;
     transition: 1s;
+    box-shadow: 0px 0px 100px black;
 }
 
 a{
@@ -316,6 +321,7 @@ a{
     font-size: 70px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    text-shadow: 0px 0px 10px 100px black;
     font-weight: 400;
     transition: 1s;
 }
@@ -341,11 +347,13 @@ ul{
     text-align: center;
     align-items: baseline;
     transition: 0.5s;
+    box-shadow: 0px 0px 70px black;
 }
 
 .c:hover{
     color: white;
     background-color: rgb(35, 35, 35);
+    transform: scale(105%);
 }
 
 
@@ -385,6 +393,7 @@ ul{
     background-repeat: no-repeat;
     filter: brightness(100%);
     transition: 1s;
+    box-shadow: 0px 0px 60px black;
 }
 
 .ac1txt{
@@ -439,6 +448,7 @@ ul{
     background-position: -150px    0px;
     background-size: 160%;
     background-repeat: no-repeat;
+    box-shadow: 0px 0px 60px black;
     transition: 1s;
 }
 
@@ -491,6 +501,7 @@ ul{
     border-radius: 10%;
     background-color: #C4C4C4;
     background-image: url(images/writers/man5.jpg);
+    box-shadow: 0px 0px 60px black;
     background-size: 100%;
     background-position: 0px 0px;
     background-repeat: no-repeat;
@@ -546,6 +557,7 @@ ul{
     border-radius: 10%;
     background-color: #C4C4C4;
     background-image: url(images/writers/man4.jpg);
+    box-shadow: 0px 0px 60px black;
     background-size: 170%;
     background-position: -50px -20px;
     background-repeat: no-repeat;
@@ -585,6 +597,7 @@ ul{
     border-radius: 10%;
     background-color: #ffffff;
     background-image: url(images/more.jpg);
+    box-shadow: 0px 0px 60px black;
     background-repeat: no-repeat;
     background-size: 150%;
     background-position-x: -100px;
