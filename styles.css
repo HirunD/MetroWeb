@@ -382,7 +382,7 @@ ul{
 .writer1{
     position: relative;
     top: 50px;
-    left: 900px;
+    left: 700px;
     width: 500px;
     height: 500px;
     border-radius: 10%;
@@ -439,7 +439,7 @@ ul{
 .writer2{
     position: relative;
     bottom: 450px;
-    left: 170px;
+    left: 100px;
     width: 250px;
     height: 250px;
     border-radius: 10%;
@@ -495,7 +495,7 @@ ul{
 .writer3{
     position: relative;
     bottom: 400px;
-    left: 170px;
+    left: 100px;
     width: 250px;
     height: 200px;
     border-radius: 10%;
@@ -551,7 +551,7 @@ ul{
 .writer4{
     position: relative;
     bottom: 900px;
-    left: 570px;
+    left: 400px;
     width: 250px;
     height: 250px;
     border-radius: 10%;
@@ -615,10 +615,10 @@ a{
 .morewriter{
     font-family: 'Montserrat', sans-serif;
     position: relative;
-    text-decoration: overline;
     top: 50%;
     left: 10px;
     right: 10px;
+    text-decoration: overline;
     font-size: 30px;
     text-decoration: none;
     color: rgb(255, 255, 255);
