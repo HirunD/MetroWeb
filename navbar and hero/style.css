@@ -64,7 +64,6 @@ nav ul{
     cursor: pointer;
 }
 .content {
-    visibility:hidden;
     position:absolute;
     width:100%;
     overflow:auto;
@@ -74,11 +73,13 @@ nav ul{
     background-color:white;
     font-size:15px;
     transition:visibility 200ms;
-    
+    transform-origin: center top;
+    transform:scale(0%);
+    transition:transform 700ms ease-in-out;
 }
 .dropdown:hover .content{
     visibility:visible;
-    
+    transform: scale(100%);
 }
 .dropdown:hover li{
     transform:scale(110%);
@@ -180,10 +181,10 @@ form {
     margin:40px auto;
     transition:background-color 200ms;
     box-shadow:5px 7px 8px #111;
-    transition:transform 500ms, background-color 500ms ease-in-out;
+    transition:transform 800ms, background-color 800ms ease-in-out;
   }
   form:hover{
-    transform: scale(105%);
+    transform: scale(110%);
     background-color:rgba(255, 255, 255,0.7);
   }
   input {
