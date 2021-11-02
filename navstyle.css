@@ -119,7 +119,7 @@ nav ul{
     display:block;
     width:30px;
     height:30px;
-    background-image: url("Images/instagrme no color.svg");
+    background-image: url(images/nav/instagrme\ no\ color.svg);
     background-size:cover;
     transition:transform 500ms;
 }
@@ -129,7 +129,7 @@ nav ul{
 .twitter {
     width:30px;
     height:30px;
-    background-image: url("Images/twitter no color.svg");
+    background-image: url("images/nav/twitter\ no\ color.svg");
     background-size:cover;
     transition:transform 500ms;
 }
@@ -150,7 +150,7 @@ nav ul{
 .hero {
     width:100%;
     height:100vh;
-    background-image:url("Images/banner.jpg");
+    background-image:url("images/nav/banner.jpg");
     background-size:cover;
 }
 .hero h1 {
