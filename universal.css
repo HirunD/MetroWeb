@@ -29,9 +29,9 @@
   
 #cursor{
   position: absolute;
-  width: 70px;
+  width: 50px;
   rotate: 10deg;
-  height: 70px;
+  height: 50px;
   border: white;
   border-style: solid;
   border-width: 2px;
