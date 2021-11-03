@@ -26,6 +26,12 @@
     cursor: none;
   }
 
+
+  .background{
+    background-image: url(images/articles/creativity.jpg);
+    background-size: cover;
+    height: 762px;
+  }
   
 #cursor{
   position: absolute;

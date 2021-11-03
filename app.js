@@ -31,3 +31,9 @@ const api_url =
     
     // Calling that async function
     getapi(api_url);
+
+
+    $('.background').ripples({
+        dropRadius: 15,
+        perturbance: 0.02,
+      });
