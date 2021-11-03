@@ -28,7 +28,7 @@
     <!-- <section class="hero" id="hero">
 
     </section> -->
-    <nav>
+    <nav id="navbar">
         <div class = "logo">Logo <br>goes <br>here</div>
         <h1>METROWEB</h1>
         <div class = "media">
@@ -140,4 +140,16 @@
     <section class="footer" id="footer">
         
     </section>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-80px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
 </html>
