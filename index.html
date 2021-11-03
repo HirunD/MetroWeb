@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script> 
+    var firebase = firebase.initializeApp(firebaseConfig);
+    onsole.log(defaultapp.name);  // "[DEFAULT]" 
+    </script> -->
     <link rel="stylesheet" href="navstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="universal.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
     <title>MetroWeb</title>
     <link rel="stylesheet" href="indexstyles.css">
     <script type="module" src="app.js"></script>
@@ -40,7 +44,7 @@
             <div class="dropdown">
                 <li><p class="item"> Catagories ≣</p></li>
                 <div class="content" id = "content">
-                    <a href="tech.html">Technology</a>
+                    <a href="tech.html" class="c1">Technology</a>
                     <a href="film.html">Entertainment</a>
                     <a href="Space.html">Space Programme</a>
                     <a href="sports.html">Sports</a>
@@ -98,7 +102,7 @@
     </section>
     <section class="categories" id="categories">
         <h1 class="cheader">Categories...</h1>
-        <ul>
+        <ul id="list">
             <li class="c"><span class="span" id="span1">Entertainment</span></li>
             <li class="c"><span class="span" id="span2">Technology</span></li>
             <li class="c"><span class="span" id="span3">Sports</span> </li>
