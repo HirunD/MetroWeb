@@ -9,8 +9,10 @@
 
 .bannersection{
     position: sticky;
-    background-color: rgba(23, 23, 23, 0.93);
-    top: -500px;
+    background-color: rgba(23, 23, 23, 1);
+    top: -550px;
+    margin-bottom: 40px;
+    z-index: 2;
 }
 
 
@@ -26,7 +28,7 @@
 
 .bannerimg{
     position: sticky;
-    top: -100px;
+    top: 70px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -35,6 +37,7 @@
     transition: 1s;
     filter: brightness(80%);
     filter: grayscale(100%);
+    margin-bottom:5px;
 }
 
 .bannerimg:hover{
@@ -46,9 +49,12 @@
 .byname{
     color: white;
     position: relative;
-    right: 250px;
     background-color: rgba(255, 255, 255, 0);
     transition: 1s;
+    text-align: left;
+    width:80%;
+    margin:0 auto;
+    transform-origin: left;
 }
 
 .bannertitle{
@@ -58,10 +64,15 @@
     background-color: rgba(255, 255, 255, 0);
     z-index: 1;
     transition: 1s;
+    text-align: left;
+    width:80%;
+    margin:0 auto;
+    line-height: 100px;
+    
 }
 
 .byname:hover{
-    transform: scale(120%);
+    transform: scale(110%);
 }
 
 .article{
@@ -71,6 +82,7 @@
     column-count: 1;
     background-color: rgba(23, 23, 23, 0.748);
     backdrop-filter: blur(200px);
+    
 }
 
 .articlepara{
@@ -83,15 +95,18 @@
 
 
 .emptyplaceholder{
-    height: 100px;
+    height: 70px;
 }
-
+.share{
+    width:80%;
+    margin:0 auto;
+}
 .devider{
-    border-top: 8px solid rgb(208, 255, 0);
+    border-top: 5px solid rgb(208, 255, 0);
     border-radius: 5px;
     position: relative;
-    width: 1000px;
-    left: 250px;
+    width: 100%;
+    margin:0 auto;
 }
 
 
@@ -116,4 +131,26 @@
 .article:hover{
     background-color: rgb(34, 34, 34);
     color: white;
+}
+
+.shareit {
+    color:white;
+    width:fit-content;
+    float:right;
+    margin-right:30px;
+}
+.share-items li{
+    display:inline-block;
+    padding:10px 0;
+}
+.share-icons{
+    display:inline-block;
+    margin-left:20px;
+}
+.share-icons li{
+    padding-right:10px;
+}
+.share-items{
+    float:right;
+    margin-right:20px;
 }
