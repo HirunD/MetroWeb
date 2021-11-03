@@ -12,9 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navstyle.css">
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <div class = "logo">Logo <br>goes <br>here</div>
         <h1>METROWEB</h1>
         <div class = "media">
@@ -25,14 +26,12 @@
         </div>
         <ul class = "links">        
             <li><a href="index.html" class="item">Home</a></li>
-
-
             <div class="dropdown">
                 <li><p class="item"> Catagories ≣</p></li>
                 <div class="content" id = "content">
-                    <a href="tech.html">Technology</a>
+                    <a href="tech.html" class="c1">Technology</a>
                     <a href="film.html">Entertainment</a>
-                    <a href="Space.html">Space Programme</a>
+                    <a href="Expo.html">Expo</a>
                     <a href="sports.html">Sports</a>
                 </div>
             </div>
@@ -46,6 +45,17 @@
         <h3>About Us</h3>
         </div>
     </div>
-    
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-80px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
 </body>
 </html>
