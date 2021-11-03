@@ -7,33 +7,3 @@ document.addEventListener('mousemove'
 }
 )
 
-
-
-// api url
-const api_url = 
-      "https://sheetdb.io/api/v1/meavkqmohxs7d";
-
-      async function getapi(url) {
-    
-        // Storing response
-        const response = await fetch(url);
-        
-        // Storing data in form of JSON
-        var data = await response.json();
-        console.log(data);
-        var categorise = data.results;  
-        return categorise.map(function(author) {
-            let ct = categorise.Category;
-        })
-
-        document.getElementById("bannert").title = ct;
-}
-    
-    // Calling that async function
-    getapi(api_url);
-
-
-    $('.background').ripples({
-        dropRadius: 15,
-        perturbance: 0.02,
-      });
