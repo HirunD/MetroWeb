@@ -6,16 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title>Technology</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"></script>
     <link rel="stylesheet" href="universal.css">
     <link rel="stylesheet" href="tech.css">
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
 </head>
 <body>
     <section class="hero">
     <h1 class="pagetitle">Technology</h1>
 </section>
     <section class="articles" id="toparticles">
-        
+        <ol id="li">
+            <li>hello</li>
+        </ol>
     </section>
+    <script>
+        var config = {
+            apiKey: "AIzaSyDXen9kHSiu3qFQnjupLdpPGluv1KpL5TU",
+            authDomain: "metroweb-71c1e.firebaseapp.com",
+            databaseURL: "https://metroweb-71c1e-default-rtdb.firebaseio.com",
+            projectId: "metroweb-71c1e",
+            storageBucket: "metroweb-71c1e.appspot.com",
+            messagingSenderId: "562591951959",
+            appId: "1:562591951959:web:187ee7a5742ff8049a0712"
+        };
+        firebase.initializeApp(config);
+        const  db = firebase.firestore();
+        db.settings({timestampsInSnapshots : true })
+    </script>
+    <script type="module" src="firebase.js"></script>
 </body>
 </html>
