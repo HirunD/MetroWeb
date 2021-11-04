@@ -15,7 +15,7 @@
        text-align: center;
        height: 762px;
        background: rgba(23, 23, 23, 0.93); 
-       /* overflow: scroll; */
+       overflow: hidden;
    }
 
    .hero img{
