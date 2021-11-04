@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* background: rgba(23, 23, 23, 0.93);    */
+   }
+
+   /*TOPRATINGS*/
+
+
+.hero{
+    height: 100vh;
+    background-color: black;
+    background-image: url(images/cetgoriese/tech/banner.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.articles {
+    overflow: hidden;
+    position: relative;
+    height: 762px;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+}
+
+
+.pagetitle{
+    color: yellow;
+    font-size: 200px;
+    padding-top: 15%;
+    text-shadow: 10px 10px 70px rgb(0, 0, 0);
+}
+
+
+
+ol{
+    color: yellow;
+    font-size: 60px;
+}
+
