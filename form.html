@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit You Article</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="universal.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <section class="hero">
+    <h1 class="pagetitle">Submit Your Article</h1>
+    <img src="images/submit/banner.jpg">
+    </section>
+    <div id="cursor"></div>
+    <div class="backgroundimage">
+    </div>
+    <section class="form">
+        <!-- <div class="glass"></div> -->
+        <form id="formcontext">
+            <label for="name">What's The Name of This Article</label>
+            <br>
+            <br>
+            <br>
+            <input type="text" name="title" placeholder="Article Name">
+            <br>
+            <br>
+            <br>
+            <label for="name">Then What's In There</label>
+            <br>
+            <br>
+            <br>
+            <input type="text" name="context" placeholder="Article Context">
+            <br>
+            <br>
+            <br>
+            <label for="name">What's Your Name</label>
+            <br>
+            <br>
+            <br>
+            <input type="text" name="name" placeholder="Name">
+            <br>
+            <br>
+            <br>
+            <label for="name">Got a Date</label>
+            <br>
+            <br>
+            <br>
+            <input type="date" name="date" placeholder="Date">
+            <br>
+            <br>
+            <br>
+            <label for="name">Any Tags You Might Wanna Add</label>
+            <br>
+            <br>
+            <br>
+            <input type="text" name="tag" placeholder="#tags">
+            <br>
+            <br>
+            <br>
+            <label for="name">What's All This About</label>
+            <br>
+            <br>
+            <br>
+            <select id="country" name="country">
+                <option value="tech">Tech</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="space-expo">Space-Expo</option>
+              </select>
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </form>
+    <div class="placeholder"></div>
+    </section>
+    <script>
+        var config = {
+            apiKey: "AIzaSyDXen9kHSiu3qFQnjupLdpPGluv1KpL5TU",
+            authDomain: "metroweb-71c1e.firebaseapp.com",
+            databaseURL: "https://metroweb-71c1e-default-rtdb.firebaseio.com",
+            projectId: "metroweb-71c1e",
+            storageBucket: "metroweb-71c1e.appspot.com",
+            messagingSenderId: "562591951959",
+            appId: "1:562591951959:web:187ee7a5742ff8049a0712"
+        };
+        firebase.initializeApp(config);
+        const  db = firebase.firestore();
+        db.settings({timestampsInSnapshots : true })
+    </script>
+    <script type="module" src="firebase.js"></script>
+</body>
+</html>

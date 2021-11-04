@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    /* background: rgba(23, 23, 23, 0.93);  */
+    /* align-items: center; */
+    /* text-align: center; */
+   }
+
+
+   .hero{
+       align-items: center;
+       text-align: center;
+       height: 762px;
+       background: rgba(23, 23, 23, 0.93); 
+       /* overflow: scroll; */
+   }
+
+   .hero img{
+       position: sticky;
+       bottom: 1000px;
+       filter: brightness(50%);
+   }
+
+   .pagetitle{
+    position: relative;
+    bottom: 1000px;
+    top: 0px;
+    z-index: 3;
+    padding-top: 10%;
+    color: yellow;
+    text-shadow: 0px 0px 10px black;
+    font-size: 150px;
+    padding-bottom: 10%;
+    transition: 1s;
+}
+
+.pagetitle:hover{
+    text-shadow:  0px 0px 100px black;
+    transform: scale(110%);
+}
+
+
+   .backgroundimage{
+       overflow: hidden;
+   }
+
+   .backgroundimage{
+       position: absolute;
+       z-index: 0;
+       background-image: url(images/nav/banner.jpg);
+       filter: brightness(80%);
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 250%;
+       width: 100%;
+       overflow: hidden;
+       top: 660px;
+       left: 0px;
+   }
+
+
+
+.form{
+    position: relative;
+    z-index: 2;
+    top: -4px;
+    /* padding-top: 10%;
+    padding-bottom: 10%; */
+    /* background-color: rgb(12, 12, 12); */
+    height: 762px;
+}
+
+#formcontext{
+    color: white;
+    width: 900px;
+    height: 1600px;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    /* background-color: rgb(12, 12, 12); */
+    padding-left: 2%;
+}
+
+
+label{
+    font-size: 40px;
+}
+
+input[type=text], select {
+    padding-top: 5px;
+    font-size: 50px;
+    padding-left: 70px;
+    padding-bottom: 10px;
+    height: 90px;
+    width: 90%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=date], select {
+    padding-top: 15px;
+    font-size: 50px;
+    padding-left: 70px;
+    color: rgb(84, 84, 84);
+    padding-bottom: 10px;
+    height: 90px;
+    width: 90%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 90%;
+    font-size: 20px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 34px 50px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #f2ff00;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+
+  .placeholder{
+      height: 500px;
+      background-color: rgb(12, 12, 12);
+  }

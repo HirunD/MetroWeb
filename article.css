@@ -154,3 +154,37 @@
     float:right;
     margin-right:20px;
 }
+
+.formlink{
+    align-self: center;
+    background-color: yellow;
+    color: blue;
+    padding-left: 10%;
+    padding-right: 10%;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.formlink:hover{
+    background-color: rgb(78, 78, 78);
+    color: black;
+    border-radius: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+
+.form{
+    align-self: center;
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 40px;
+    align-items: center;
+    transition: 1s;
+}
+
+
+.form:hover{
+    transform: scale(110%);
+}
