@@ -8,8 +8,10 @@
 
    /*TOPRATINGS*/
 
-
-.hero{
+.media ul {
+    padding-top:10px;
+}
+.hero1{
     height: 100vh;
     background-color: black;
     background-image: url(images/cetgoriese/tech/banner.gif);

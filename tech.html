@@ -13,11 +13,44 @@
     <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"></script>
     <link rel="stylesheet" href="universal.css">
     <link rel="stylesheet" href="categorise.css">
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
     <!-- <script src="app.js"></script> -->
 </head>
 <body>
     <div id="cursor"></div>
-    <section class="hero">
+    <nav id="navbar">
+        <div class = "logo">Logo <br>goes <br>here</div>
+        <h1>METROWEB</h1>
+        <div class = "media">
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank"><div class="insta"></div></a></li>
+                <li><a href="https://twitter.com" target="_blank"><div class = "twitter"></div></a></li>
+            </ul>
+        </div>
+        <ul class = "links">        
+            <li><a href="index.html" class="item">Home</a></li>
+            <div class="dropdown">
+                <li><p class="item"> Catagories ≣</p></li>
+                <div class="content" id = "content">
+                    <a href="tech.html" class="c1">Technology</a>
+                    <a href="film.html">Entertainment</a>
+                    <a href="Expo.html">Expo</a>
+                    <a href="sports.html">Sports</a>
+                </div>
+            </div>
+            <li><a href="about.html" class="item">About</a></li>
+        </ul>
+    </nav>
+    <section class="hero1">
     <h1 class="pagetitle">Technology</h1>
 </section>
     <section class="articles" id="toparticles">
@@ -37,5 +70,17 @@
         db.settings({timestampsInSnapshots : true })
     </script>
     <script type="module" src="firebase.js"></script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-80px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
 </body>
 </html>
