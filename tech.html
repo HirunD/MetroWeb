@@ -13,7 +13,6 @@
     <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"></script>
     <link rel="stylesheet" href="universal.css">
     <link rel="stylesheet" href="categorise.css">
-    <!-- <script src="app.js"></script> -->
 </head>
 <body>
     <div id="cursor"></div>
@@ -21,7 +20,27 @@
     <h1 class="pagetitle">Technology</h1>
 </section>
     <section class="articles" id="toparticles">
-    </section>
+     <div class="Article1">
+           <div class="shadow"></div>
+            <a class="ac1txt" id="ac1txt" href="article.html?wefwefwer wewefw we"></h1>
+             </div>
+        <div class="Article2">
+           <div class="shadow2"></div>
+          <h1 class="ac2txt">How To Be Happy When Everything Goes Wrong</h1>
+         </div>
+         <div class="Article3">
+          <div class="shadow3"></div>
+           <h1 class="ac3txt">This Zen Concept Will Help You Stop Being...</h1>
+             </div>
+        <div class="Article4">
+        <div class="shadow4"></div>
+        <h1 class="ac4txt">The Ultimate Productivity Hack...</h1>
+        </div>
+     <div class="Topmore">
+        <div class="shadow5"></div>
+        <a href="toprated.html" class="more">More...</a>
+      </div>
+</section>
     <script>
         var config = {
             apiKey: "AIzaSyDXen9kHSiu3qFQnjupLdpPGluv1KpL5TU",
@@ -36,6 +55,6 @@
         const  db = firebase.firestore();
         db.settings({timestampsInSnapshots : true })
     </script>
-    <script type="module" src="firebase.js"></script>
+    <script type="module" src="categoryfirebase.js"></script>
 </body>
 </html>

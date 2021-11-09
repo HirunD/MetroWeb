@@ -41,3 +41,273 @@ ol{
     font-size: 60px;
 }
 
+
+.articles{
+    padding-top: 5%;
+    padding-bottom: 10%;
+    background-color: rgb(22, 22, 22);
+}
+
+
+
+.Article1{
+    position: relative;
+    top: 50px;
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(images/articles/creativity.jpg);
+    background-position: -300px;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    filter: brightness(100%);
+    transition: 1s;
+    box-shadow: 0px 0px 100px black;
+}
+
+.ac1txt{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 250px;
+    left: 10px;
+    font-size: 60px;
+    color: black;
+    text-shadow: 5px 5px 20px rgb(66, 66, 66);
+    transition: 1s;
+    /* background: #C4C4C4; */
+}
+
+.shadow{
+    height: 500px;
+    width: 500px;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0.129);
+    transition: 1s;
+    position: absolute;
+}
+
+
+.shadow:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+.ac1txt:hover{
+    color: rgb(255, 255, 255);
+    filter: brightness(100%);
+}
+
+
+.Article1:hover{
+    background-blend-mode: saturation;
+    backdrop-filter: inherit;
+    background-size: 220%;
+    background-repeat: no-repeat;
+}
+
+
+.Article2{
+    position: relative;
+    bottom: 450px;
+    left: 670px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    background-color: #C4C4C4;
+    background-image: url(images/articles/happy.jpg);
+    background-position: -150px    0px;
+    background-size: 160%;
+    background-repeat: no-repeat;
+    filter: brightness(250%);
+    transition: 1s;
+    box-shadow: 0px 0px 100px black;
+}
+
+
+.ac2txt{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: black;
+    text-shadow: 5px 5px 10px rgb(66, 66, 66);
+    transition: 1s;
+    /* background: #C4C4C4; */
+}
+
+.shadow2{
+    height: 250px;
+    width: 250px;
+    border-radius: 10%;
+    background-color: rgba(12, 12, 12, 0.598);
+    transition: 1s;
+    position: absolute;
+}
+
+
+.shadow2:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+.ac2txt:hover{
+    color: white;
+}
+
+.Article2:hover{
+    background-size: 180%;
+    background-position-x: -150px;
+}
+
+
+.Article3{
+    position: relative;
+    bottom: 400px;
+    left: 670px;
+    width: 250px;
+    height: 200px;
+    border-radius: 10%;
+    background-color: #C4C4C4;
+    background-image: url(images/articles/zen.jpg);
+    background-size: 160%;
+    background-position: -10px -20px;
+    background-repeat: no-repeat;
+    transition: 1s;
+    box-shadow: 0px 0px 100px black;
+}
+
+.ac3txt{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 40%;
+    left: 10px;
+    right: 30px;
+    font-size: 25px;
+    color: black;
+    text-shadow: 5px 5px 10px rgb(66, 66, 66);
+    transition: 1s;
+    /* background: #C4C4C4; */
+}
+
+
+.shadow3{
+    height: 200px;
+    width: 250px;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0.129);
+    transition: 1s;
+    position: absolute;
+}
+
+
+.shadow3:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+.ac3txt:hover{
+    color: white;
+}
+
+.Article3:hover{
+    background-size: 200%;
+    background-position: -100px -90px;
+}
+
+
+.Article4{
+    position: relative;
+    bottom: 900px;
+    left: 970px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    background-color: #C4C4C4;
+    background-image: url(images/articles/entertainment.jpg);
+    background-size: 160%;
+    background-position: -50px -20px;
+    background-repeat: no-repeat;
+    transition: 1s;
+    box-shadow: 0px 0px 100px black;
+}
+
+
+.ac4txt{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: black;
+    text-shadow: 5px 5px 10px rgb(66, 66, 66);
+    transition: 1s;
+    /* background: #C4C4C4; */
+}
+
+
+.ac4txt:hover{
+    color: white;
+}
+
+.Article4:hover{
+    background-size: 180%;
+}
+
+
+.Topmore{
+    position: relative;
+    bottom: 850px;
+    left: 970px;
+    width: 250px;
+    height: 200px;
+    border-radius: 10%;
+    background-color: #ffffff;
+    background-image: url(images/articles/more.jpg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position-x: -100px;
+    transition: 1s;
+    box-shadow: 0px 0px 100px black;
+}
+
+a{
+    text-decoration: none;
+    height: 200px;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.more{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    text-decoration: overline;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 10px rgb(54, 54, 54);
+    transition: 1s;
+}
+
+
+.more:hover{
+    color: rgb(255, 255, 255);
+    font-size: 410%;
+}
+
+.Topmore:hover{
+    background-size: 180%;
+    background-position-x: -150px;
+    background-position-y: -20px;
+}
