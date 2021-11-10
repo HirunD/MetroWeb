@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>results</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-auth.js"></script>
+</head>
+<body>
+    <h2 id="results"></h2>
+    <script>
+        var config = {
+            apiKey: "AIzaSyDXen9kHSiu3qFQnjupLdpPGluv1KpL5TU",
+            authDomain: "metroweb-71c1e.firebaseapp.com",
+            databaseURL: "https://metroweb-71c1e-default-rtdb.firebaseio.com",
+            projectId: "metroweb-71c1e",
+            storageBucket: "metroweb-71c1e.appspot.com",
+            messagingSenderId: "562591951959",
+            appId: "1:562591951959:web:187ee7a5742ff8049a0712"
+        };
+        firebase.initializeApp(config);
+        const  db = firebase.firestore();
+        const auth = firebase.auth();
+        db.settings({timestampsInSnapshots : true })
+    </script>
+    <script src="result.js"></script>
+</body>
+</html>

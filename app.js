@@ -7,3 +7,16 @@ document.addEventListener('mousemove'
 }
 )
 
+
+
+const searchPara = document.querySelector('form');
+
+searchPara.addEventListener('submit', (e) =>{
+    e.preventDefault();
+    const searchword = searchPara.search.value;
+
+    window.location.href = "/search/results.html?" + searchword;
+})
+
+
+
