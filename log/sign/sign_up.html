@@ -22,6 +22,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sign_up.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
@@ -47,13 +51,19 @@
             <li><a href="about.html" class="item">About</a></li>
         </ul>
     </nav>
-    <form id="signup">
-        <input type="email" id="signup_email" required>
-        <label for="signup_email">Email <Address></Address></label>
-        <input type="password" id="signup_password" required>
-        <label for="password">password <Address></Address></label>
-        <button>submit</button>
-    </form>
+    <div class = "bg"></div>
+        <div class= "item_box">
+            <div class = "stuff">
+                <H2>Sign Up to MetroWeb</H2>
+                <form id="signup">
+                    <input type="email" id="signup_email" required placeholder="Email" class="q">
+                    <input type="password" id="signup_password" required placeholder="Password" class="q">
+                    <div class = "center_btn"><button class = "submit_btn">submit</button></div>
+                </form>
+            </div>
+        </div>
+    
+    
 
 <script>
     var config = {

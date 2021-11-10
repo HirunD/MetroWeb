@@ -179,7 +179,7 @@ nav .links {
     width:fit-content;
     margin:0 auto;
 }
-form {
+.formq {
     background-color: rgba(255, 255, 255, 0.5);
     color: rgb(72, 72, 72);
     width: 700px;
@@ -193,7 +193,7 @@ form {
     box-shadow:5px 7px 8px #111;
     transition:transform 800ms, background-color 800ms ease-in-out;
   }
-  form:hover{
+  .formq:hover{
     transform: scale(110%);
     color: black;
     background-color:rgba(255, 255, 255,0.7);
