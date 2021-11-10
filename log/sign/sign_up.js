@@ -10,9 +10,12 @@ signupform.addEventListener('submit',(e) =>{
     
         //sign up user
         auth.createUserWithEmailAndPassword(email, pasword)
-  .then((userCredential) => {
+  .then((cred) => {
+    db.collection('users').doc(cred.user.uid).set({
+      name: signupform['name'].value
+    })
     // Signed in 
-    const user = userCredential.user;
+    const user = cred.user;
     // ...
   })
   .catch((error) => {
