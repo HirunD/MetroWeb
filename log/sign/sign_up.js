@@ -14,6 +14,9 @@ signupform.addEventListener('submit',(e) =>{
     db.collection('users').doc(cred.user.uid).set({
       name: signupform['name'].value
     })
+    signupform.name.value = '';
+    signupform.signup_email.value = '';
+    signupform.signup_password.value = '';
     // Signed in 
     const user = cred.user;
     // ...
