@@ -11,7 +11,14 @@ auth.onAuthStateChanged((user) => {
     } else {
       console.log('logged_out');
       console.log("no data");
-      section.style.display = "block";
+      section.style.display = "inline-block";
       submit.style.display = "none";
     }
   });
+
+  const logout = document.querySelector('#logout');
+
+  logout.addEventListener('click', (e) =>{
+    auth.signOut();}
+  );
+ 
