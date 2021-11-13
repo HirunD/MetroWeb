@@ -11,9 +11,47 @@
     <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-auth.js"></script>
+    <link rel="stylesheet" href="universal.css">
+    <link rel="stylesheet" href="../../navstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sign_up.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form id="log_in">
+    <nav id="navbar">
+        <div class = "logo">Logo <br>goes <br>here</div>
+        <h1>METROWEB</h1>
+        <div class = "media">
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank"><div class="insta"></div></a></li>
+                <li><a href="https://twitter.com" target="_blank"><div class = "twitter"></div></a></li>
+            </ul>
+        </div>
+        <ul class = "links">        
+            <li><a href="index.html" class="item">Home</a></li>
+            <div class="dropdown">
+                <li><p class="item"> Catagories ≣</p></li>
+                <div class="content" id = "content">
+                    <a href="tech.html" class="c1">Technology</a>
+                    <a href="film.html">Entertainment</a>
+                    <a href="Expo.html">Expo</a>
+                    <a href="sports.html">Sports</a>
+                </div>
+            </div>
+            <li><a href="about.html" class="item">About</a></li>
+        </ul>
+    </nav>
+    <!--<form id="log_in">
         <input type="email" id="email" required>
         <label for="signup_email">Email <Address></Address></label>
         <input type="password" id="password" required>
@@ -21,7 +59,18 @@
         <button>submit</button>
     </form>
 
-    <button id="logout">log out</button>
+    <button id="logout">log out</button> -->
+    <div class = "bg"></div>
+    <div class= "item_box">
+        <div class = "stuff">
+            <H2>Sign Up to<br> <span>MetroWeb</span></H2>
+            <form id="log_in">
+                <input type="email" id="signup_email" required placeholder="Email" class="q">
+                <input type="password" id="password" required placeholder="Password" class="q">
+                <div class = "center_btn"><button class = "submit_btn">SUBMIT</button></div>
+            </form>
+        </div>
+    </div>
 
 <script>
     var config = {
