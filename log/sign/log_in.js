@@ -61,7 +61,7 @@ log_in.addEventListener('submit',(e) =>{
 auth.onAuthStateChanged((user) => {
   if (user) {
       setTimeout(function () {
-          window.location.href = "/index.html"; //will redirect to your blog page (an ex: blog.html)
+          window.location.href = "../../index.html"; //will redirect to your blog page (an ex: blog.html)
        }, 5000) //will call the function after 2 secs.
   }
 });
