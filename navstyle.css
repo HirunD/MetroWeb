@@ -155,6 +155,59 @@ nav .links {
     color:white;
     border:1px solid white;
 }
+
+.sign-drop{
+    display:inline-block;
+    position:relative;
+    height:fit-content; 
+    cursor: pointer;
+}
+.sign-op{
+    position:absolute;
+    width:100%;
+    overflow:auto;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.4);
+    border-radius:20px;
+    padding:20px;
+    background-color:white;
+    font-size:15px;
+    transition:visibility 200ms;
+    transform-origin: center top;
+    transform:scale(0%);
+    transition:transform 700ms ease-in-out;
+}
+.sign-drop:hover .sign-op{
+    visibility:visible;
+    transform:scale(100%)
+}
+.sign-op a{
+    color:#111;
+    font-family:"Arial";
+    width:100%;
+    border-radius: 5px;
+    transition:500ms ease-in-out;
+    display:block;
+    height:fit-content;
+    padding:5px;
+}
+.sign-op a:hover{
+    background-color: #03057c;
+    color:white;
+}
+.sign-drop:hover li{
+    transform:scale(110%);
+    border-color:#f2f2f2;
+    background-color: #03057c;
+}
+/*
+#not-logged{
+    display:none;
+}
+
+#logged{
+    display:none;
+}
+*/
 /* -----------end of navbar-------------*/
 .hero {
     width:100%;
