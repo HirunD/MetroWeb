@@ -1,12 +1,20 @@
 //listen for auth status changes
 
+const massage = document.getElementById('loged_in');
+const text = document.getElementById('text');
+
 auth.onAuthStateChanged((user) => {
   if (user) {
     console.log('logged_in');
     console.log(user.email);
+    massage.style.display = "block";
+    logout.style.display = "none";
+    text.textContent = 'logged in to';
   } else {
     console.log('logged_out');
     console.log("no data");
+    massage.style.display = "none";
+    logout.style.display = "block";
   }
 });
 
