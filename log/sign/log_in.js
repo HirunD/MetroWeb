@@ -11,7 +11,7 @@ auth.onAuthStateChanged((user) => {
 });
 
 
-const logout = document.querySelector('#logout');
+const logout = document.querySelector('#log_in');
 
 logout.addEventListener('click', (e) =>{
   auth.signOut();}
@@ -28,7 +28,7 @@ const log_in = document.querySelector('#log_in');
 log_in.addEventListener('submit',(e) =>{
         e.preventDefault();
     
-        const email = log_in['email'].value;
+        const email = log_in['signup_email'].value;
         const pasword = log_in['password'].value;
     
         //sign up user
