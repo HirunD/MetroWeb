@@ -1,12 +1,12 @@
 const loading = document.getElementById('loading');
 
 window.onload(setTimeout(() => {
-        loading.style.display = "none";
+        loading.style.display = "inline";
         loading.style.zIndex = "100";
         },
     5000)
     .then(
-        loading.style.display = "inline",
+        loading.style.display = "none",
         // loading.style.position = "fixed"
     )
     );
