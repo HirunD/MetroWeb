@@ -1,3 +1,16 @@
+const loading = document.getElementById('loading');
+
+window.onload(setTimeout(() => {
+        loading.style.display = "none";
+        loading.style.zIndex = "100";
+        },
+    5000)
+    .then(
+        loading.style.display = "inline",
+        // loading.style.position = "fixed"
+    )
+    );
+
 document.addEventListener('mousemove'
 , function(e){
     var x = e.pageX;
@@ -17,6 +30,11 @@ searchPara.addEventListener('submit', (e) =>{
 
     window.location.href = "/search/results.html?" + searchword;
 })
+
+
+// window.onload = function(){ document.getElementById("loading").style.display = "none" }
+
+
 
 
 
