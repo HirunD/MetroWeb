@@ -9,7 +9,8 @@ const date = document.querySelector('#date');
 let url = window.location.href;
 let page = url.split("?")[1].split('%20').join(' ');
 
-window.title = page;
+
+window.document.title = page;
 
 console.log(page);
 
