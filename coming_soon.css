@@ -3,6 +3,7 @@ html{
     align-items: center;
     height: 760;
     overflow: hidden;
+    background-image: url(images/images_coming_soon/earth-hd.jpg);
 }
 
 img{
@@ -21,6 +22,9 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(images/images_coming_soon/dbe40460e9005b411eba5a9e3eeaea01.gif);
+    background-size: cover;
+    background-position-y: 30%;
   }
   
   .typing-demo {
@@ -44,6 +48,19 @@ img{
 h1{
     font-size: 100px;
 }
+#cursor{
+    animation: blink2 .5s step-end infinite alternate;
+}
+
+
+@keyframes blink2 {
+    50% {
+      background-color: black;
+      height: 80px;
+      width: 80px;
+    }
+  }
+
   
   @keyframes typing {
     0% {

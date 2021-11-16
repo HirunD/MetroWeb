@@ -9,8 +9,10 @@
     <script src="app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-auth.js"></script>
     <link rel="stylesheet" href="universal.css">
     <link rel="stylesheet" href="categorise.css">
     <link rel="stylesheet" href="navstyle.css">
@@ -28,7 +30,7 @@
 <body>
     <div id="cursor"></div>
     <nav id="navbar">
-        <div class = "logo">Logo <br>goes <br>here</div>
+        <div class = "logo"><img src="assests/logo/Asset 1.svg" alt="MetroWeb"></div>
         <h1>METROWEB</h1>
         <div class = "media">
             <ul>
@@ -47,7 +49,17 @@
                     <a href="sports.html">Sports</a>
                 </div>
             </div>
+            <div class = "sign-drop" id = "not-logged">
+                <li>Join Us</li>
+                <div id="signsection" class="sign-op">
+                    <a href="log/sign/sign_up.html">Sign Up</a>
+                    <a href="log/sign/log_in.html">Log in</a>
+                </div>
+            </div>
+            <li id = "logged"><a href="form.html">Submit</a></li>
             <li><a href="about.html" class="item">About</a></li>
+            <li id = "logout"><a href="">logout</a></li>
+            
         </ul>
     </nav>
     <section class="hero1">
@@ -87,9 +99,11 @@
         };
         firebase.initializeApp(config);
         const  db = firebase.firestore();
+        const  auth = firebase.auth();
         db.settings({timestampsInSnapshots : true })
     </script>
         <script type="module" src="categoryfirebase.js"></script>
+        <script src="navauth.js"></script>
     <script type="module" src="categoryfirebase.js"></script>
     <script type="module" src="firebase.js"></script>
     <script>
