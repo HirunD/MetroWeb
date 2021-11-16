@@ -649,7 +649,7 @@ a{
 }
 
 
-/* small screens */
+/*screen 1 */
 
 @media only screen and (max-width:1229px) {
     
@@ -727,4 +727,41 @@ a{
         left: 670px;
 }
 
+}
+
+
+
+/*screen 2 */
+
+@media only screen and (max-width:1011px) {
+    .Article2{
+        left: 30px;
+        bottom: -20px;
+    }
+    .Article3{
+        bottom: 100px;
+        left: 530px;
+    }
+    .Topmore{
+        bottom: 200px;
+    }
+    .Article4{
+        left: 130px;
+    }
+    .writer2{
+        left: 30px;
+        bottom: -20px;
+    }
+    .writer3{
+        left: 530px;
+        bottom: 100px;
+    }
+    .writer4{
+        left: 130px;
+        transform: scale(110%);
+    }
+
+    .Topmorewriter{
+        bottom: 200px;
+    }
 }
