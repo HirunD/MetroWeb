@@ -1,0 +1,56 @@
+html{
+    background-color: rgb(40, 2, 162);
+    align-items: center;
+    height: 760;
+    overflow: hidden;
+}
+
+img{
+    margin: 0px auto;
+    transform: scale(80%);
+    height: 100%;
+    z-index: 0;
+    width: 100%;
+    position: absolute;
+    /* top: -360px; */
+}
+
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+    /* width: 900px; */
+    color: yellow;
+    animation: typing 10s steps(22) infinite, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+
+h1{
+    font-size: 100px;
+}
+  
+  @keyframes typing {
+    0% {
+      width: 0;
+      color: white;
+    }
+    15%{
+        width: 900px;
+        color: yellow;
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- <script> 
+    var firebase = firebase.initializeApp(firebaseConfig);
+    onsole.log(defaultapp.name);  // "[DEFAULT]" 
+    </script> -->
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="universal.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <title>MetroWeb</title>
+    <link rel="stylesheet" href="indexstyles.css">
+    <script type="module" src="app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-auth.js"></script>
+</head>
+<body>
+<!--     <div class="loading" id="loading">
+        <img src="assests/logo/Asset 1.svg" alt=""></div>
+        <div class="loader"></div> -->
+   <div id="cursor"></div>
+    <!-- <section class="hero" id="hero">
+
+    </section> -->
+    <nav id="navbar">
+        <div class = "logo"><img src="assests/logo/Asset 1.svg" alt="MetroWeb"></div>
+        <h1>METROWEB</h1>
+        <div class = "media">
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank"><div class="insta"></div></a></li>
+                <li><a href="https://twitter.com" target="_blank"><div class = "twitter"></div></a></li>
+            </ul>
+        </div>
+        <ul class = "links">        
+            <li><a href="index.html" class="item">Home</a></li>
+            <div class="dropdown">
+                <li><p class="item"> Catagories ≣</p></li>
+                <div class="content" id = "content">
+                    <a href="tech.html" class="c1">Technology</a>
+                    <a href="film.html">Entertainment</a>
+                    <a href="Expo.html">Expo</a>
+                    <a href="sports.html">Sports</a>
+                </div>
+            </div>
+            <div class = "sign-drop" id = "not-logged">
+                <li>Join Us</li>
+                <div id="signsection" class="sign-op">
+                    <a href="log/sign/sign_up.html">Sign Up</a>
+                    <a href="log/sign/log_in.html">Log in</a>
+                </div>
+            </div>
+            <li id = "logged"><a href="form.html">Submit</a></li>
+            <li><a href="about.html" class="item">About</a></li>
+            <li id = "logout"><a href="">logout</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <div class = "hero">
+            <h1>
+                WELCOME TO METROWEB
+            </h1>
+            <h3>Your one stop Portal <br> To everything</h3>
+            <form role="search" id="form" class = "formq">
+                <input type="search" id="query" name="q">
+                <input type="text" id="query" name="search"
+                 placeholder="Search..." aria-label="Search through site content">
+                <button>
+                  <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+                </button>
+              </form>
+                <div class = "app">
+                    <h4>
+                        Download our app
+                    </h4>
+                    <img src="images/nav/platforms.png" alt="Platforms">
+                </div>
+                <a class="explore" href="#toparticles">
+                    Explore
+                </a>
+        </div>
+    </main>
+    <section class="toparticles" id="toparticles">
+        <h1 class="toparticleheader">Top Articles...</h1>
+        <div class="Article1">
+            <div class="shadow"></div>
+            <h1 class="ac1txt">Creativity Is a Process, Not an Event</h1>
+        </div>
+        <div class="Article2">
+            <div class="shadow2"></div>
+            <h1 class="ac2txt">How To Be Happy When Everything Goes Wrong</h1>
+        </div>
+        <div class="Article3">
+            <div class="shadow3"></div>
+            <h1 class="ac3txt">This Zen Concept Will Help You Stop Being...</h1>
+        </div>
+        <div class="Article4">
+            <div class="shadow4"></div>
+            <h1 class="ac4txt">The Ultimate Productivity Hack...</h1>
+        </div>
+        <div class="Topmore">
+            <div class="shadow5"></div>
+            <a href="toprated.html" class="more">More...</a>
+        </div>
+    </section>
+    <section class="categories" id="categories">
+        <h1 class="cheader">Categories...</h1>
+        <ul id="list">
+            <a href="film.html"><li class="c"><span class="span" id="span1"> Entertainment</span></li></a>
+            <a href="tech.html"><li class="c"><span class="span" id="span2"> Technology</span></li></a>
+            <a href="sports.html"> <li class="c"><span class="span" id="span3">Sports</span> </li></a>
+            <a href="Expo.html"><li class="c"><span class="span" id="span4">Expo</span></li></a>
+            <!-- <li class="c"><span class="span" id="span5">anything new</span></li> -->
+        </ul>
+    </div>
+        <!-- <div class="coptional"></div> -->
+    </section>
+    <section class="writers" id="writers">
+        <h1 class="writersheader">Our Best Writers...</h1>
+        <div class="writer1">
+            <div class="shadow"></div>
+            <h1 class="ac1txt">Creativity Is a Process, Not an Event</h1>
+        </div>
+        <div class="writer2">
+            <div class="shadow2"></div>
+            <h1 class="ac2txt">How To Be Happy When Everything Goes Wrong</h1>
+        </div>
+        <div class="writer3">
+            <div class="shadow3"></div>
+            <h1 class="ac3txt">This Zen Concept Will Help You Stop Being...</h1>
+        </div>
+        <div class="writer4">
+            <div class="shadow4"></div>
+            <h1 class="ac4txt">The Ultimate Productivity Hack...</h1>
+        </div>
+        <div class="Topmorewriter">
+            <div class="shadow5"></div>
+            <a href="toprated.html" class="morewriter">More...</a>
+        </div>
+    </section>
+    <section class="entertainment" id="entertainment">
+        
+    </section>
+    <section class="footer" id="footer">
+        
+    </section>
+    <script>
+        var config = {
+            apiKey: "AIzaSyDXen9kHSiu3qFQnjupLdpPGluv1KpL5TU",
+            authDomain: "metroweb-71c1e.firebaseapp.com",
+            databaseURL: "https://metroweb-71c1e-default-rtdb.firebaseio.com",
+            projectId: "metroweb-71c1e",
+            storageBucket: "metroweb-71c1e.appspot.com",
+            messagingSenderId: "562591951959",
+            appId: "1:562591951959:web:187ee7a5742ff8049a0712"
+        };
+        firebase.initializeApp(config);
+    
+        const auth = firebase.auth();
+        const  db = firebase.firestore();
+        
+        db.settings({timestampsInSnapshots : true })
+    </script>
+    <script src="navauth.js"></script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-80px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+</html>
