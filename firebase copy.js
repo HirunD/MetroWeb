@@ -1,40 +1,47 @@
-const title = document.querySelector('#bannert');
-const byname = document.querySelector('#byname');
-const para = document.querySelector('#articlepara');
-const tag = document.querySelector('#tag');
-const list = document.querySelector('#li');
-const form = document.querySelector('#formcontext');
-const date = document.querySelector('#date');
+const tile1 = document.querySelector('#ac1txt');
+const tile2 = document.querySelector('#ac2txt');
+const tile3 = document.querySelector('#ac3txt');
+const tile4 = document.querySelector('#ac4txt');
+// const tile5 = document.querySelector('#ac5txt');
+const page = document.title;
 
+
+console.log(page);
 
 function renderTitle(doc){
-  let title = document.getElementById('bannert');
-  let byname = document.getElementById('byname');
-  let para = document.getElementById('articlepara');
-  let li = document.createElement('li');
-  let tag = document.createElement('li');
-  let date = document.createElement('p');
+  // const Article_1_name = doc.data().Article_1.name;
+  // const Article_1_link = doc.data().Article_1.content;
+  let tile1 = document.getElementById('ac1txt');
 
 
-  title.setAttribute('data-id', doc.id);
-  byname.setAttribute('data-id', doc.id);
-  para.setAttribute('data-id', doc.id);
-  tag.setAttribute('data-id', doc.id);
-  date.setAttribute('data-id', doc.id);
+  tile1.setAttribute('data-id', doc.id);
+    tile1.setAttribute('href' , "article.html?" + doc.data().article_1.link);
+  tile2.setAttribute('data-id', doc.id);
+    tile2.setAttribute('href' , "article.html?" + doc.data().article_2.link);
+  tile3.setAttribute('data-id', doc.id);
+    tile3.setAttribute('href' , "article.html?" + doc.data().article_3.link);
+  tile4.setAttribute('data-id', doc.id);
+    tile4.setAttribute('href' , "article.html?" + doc.data().article_4.link);
+  // tile5.setAttribute('data-id', doc.id);
+  //   tile5.setAttribute('href' , "article.html?" + doc.data().Article_1.content);
+  // tile1.setAttribute("href",  "article.html?" + page);
 
 
-  title.textContent = doc.data().category.article.a_name;
-  byname.textContent = doc.data().category.article.a_posted_by;
-  para.textContent = doc.data().category.article.a_content;
-  tag.textContent = doc.data().category.article.a_tags;
-  byname.textContent = doc.data().category.article.a_posted_by;
+  tile1.textContent = doc.data().article_1.name;
+  tile2.textContent = doc.data().article_2.name;
+  tile3.textContent = doc.data().article_3.name;
+  tile4.textContent = doc.data().article_4.name;
+  // tile5.textContent = doc.data().Article_1.name;
+  
+  tile1.onclick = setInterval(function() {
+  const tile1 = doc.data().content;
+});
 
 
-  list.appendChild(li);
 }
 
 //getting data
-db.collection('MetroWeb').doc(newpage)
+db.collection('MetroWeb').doc('Top_Articles')
 .get()
 .then(function(doc) {
   if (doc.exists) {
@@ -47,4 +54,3 @@ db.collection('MetroWeb').doc(newpage)
 }).catch(function(error) {
   console.log("Error getting document:", error);
 });
-

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-auth.js"></script>
+    <link rel="stylesheet" href="admin/admin.css">
+</head>
+<body id="body">
+    <h1>Article 1</h1>
+    <section id="article_1"><section id="rting_form">
+        <form class="form" id="formcontext_1" method="post" action="index.html">
+            <label for="name">Name</label>
+            <br>
+            <br>
+            <br>
+            <input id="name" type="text" name="title" placeholder="Article Name">
+            <br>
+            <br>
+            <br>
+            <label for="name">Linking Text</label>
+            <br>
+            <br>
+            <br>
+            <input type="text" id="context" name="context" placeholder="Article Context">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- <button onclick="submitdata();">submit</button> -->
+            <!-- <input type="submit" value="Submit"> -->
+        </form>
+    </section>
+    <h1>Article 2</h1>
+</section>
+<section id="article_1"><section id="rting_form">
+    <form class="form" id="formcontext_2" method="post" action="index.html">
+        <label for="name">Name</label>
+        <br>
+        <br>
+        <br>
+        <input id="name" type="text" name="title" placeholder="Article Name">
+        <br>
+        <br>
+        <br>
+        <label for="name">Linking Text</label>
+        <br>
+        <br>
+        <br>
+        <input type="text" id="context" name="context" placeholder="Article Context">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- <button onclick="submitdata();">submit</button> -->
+        <!-- <input type="submit" value="Submit"> -->
+    </form>
+</section>
+</section>
+<h1>Article 3</h1>
+<section id="article_1"><section id="rting_form">
+    <form class="form" id="formcontext_3" method="post" action="index.html">
+        <label for="name">Name</label>
+        <br>
+        <br>
+        <br>
+        <input id="name" type="text" name="title" placeholder="Article Name">
+        <br>
+        <br>
+        <br>
+        <label for="name">Linking Text</label>
+        <br>
+        <br>
+        <br>
+        <input type="text" id="context" name="context" placeholder="Article Context">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- <button onclick="submitdata();">submit</button> -->
+        <!-- <input type="submit" value="Submit"> -->
+    </form>
+</section>
+</section>
+<h1>Article 4</h1>
+<section id="article_1"><section id="rting_form">
+    <form class="form" id="formcontext_4" method="post" action="index.html">
+        <label for="name">Name</label>
+        <br>
+        <br>
+        <br>
+        <input id="name" type="text" name="title" placeholder="Article Name">
+        <br>
+        <br>
+        <br>
+        <label for="name">Linking Text</label>
+        <br>
+        <br>
+        <br>
+        <input type="text" id="context" name="context" placeholder="Article Context">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- <button onclick="submitdata();">submit</button> -->
+        <input type="submit" value="Subtmit all">
+    </form>
+</section>
+</section>
+<script>
+    var config = {
+        apiKey: "AIzaSyDXen9kHSiu3qFQnjupLdpPGluv1KpL5TU",
+        authDomain: "metroweb-71c1e.firebaseapp.com",
+        databaseURL: "https://metroweb-71c1e-default-rtdb.firebaseio.com",
+        projectId: "metroweb-71c1e",
+        storageBucket: "metroweb-71c1e.appspot.com",
+        messagingSenderId: "562591951959",
+        appId: "1:562591951959:web:187ee7a5742ff8049a0712"
+    };
+    firebase.initializeApp(config);
+
+    const auth = firebase.auth();
+    const  db = firebase.firestore();
+    
+    db.settings({timestampsInSnapshots : true })
+</script>
+<script type="module" src="admin/adminfirebase.js"></script>
+<script src="admin/authadmin.js"></script>
+</body>
+</html>

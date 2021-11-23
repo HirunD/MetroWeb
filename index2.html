@@ -97,28 +97,27 @@
                 </a>
         </div>
     </main>
-    <section class="toparticles" id="toparticles">
-        <h1 class="toparticleheader">Top Articles...</h1>
+    <section class="articles" id="toparticles">
         <div class="Article1">
-            <div class="shadow"></div>
-            <h1 class="ac1txt">Creativity Is a Process, Not an Event</h1>
-        </div>
-        <div class="Article2">
-            <div class="shadow2"></div>
-            <h1 class="ac2txt">How To Be Happy When Everything Goes Wrong</h1>
-        </div>
-        <div class="Article3">
-            <div class="shadow3"></div>
-            <h1 class="ac3txt">This Zen Concept Will Help You Stop Being...</h1>
-        </div>
-        <div class="Article4">
-            <div class="shadow4"></div>
-            <h1 class="ac4txt">The Ultimate Productivity Hack...</h1>
-        </div>
-        <div class="Topmore">
-            <div class="shadow5"></div>
-            <a href="toprated.html" class="more">More...</a>
-        </div>
+              <div class="shadow"></div><a class="ac1txt" id="ac1txt">...</a>
+                </div>
+           <div class="Article2">
+              <div class="shadow2"></div>
+              <a class="ac2txt" id="ac2txt">...</a>
+            </div>
+            <div class="Article3">
+             <div class="shadow3"></div>
+             <a class="ac3txt" id="ac3txt">...</a>
+                </div>
+           <div class="Article4">
+           <div class="shadow4"></div>
+           <a class="ac4txt" id="ac4txt">...</a>
+           </div>
+        <!-- <div class="Topmore">
+           <div class="shadow5"></div>
+           <a href="toprated.html" class="more">More...</a>
+         </div> -->
+    </section>
     </section>
     <section class="categories" id="categories">
         <h1 class="cheader">Categories...</h1>
@@ -136,19 +135,26 @@
         <h1 class="writersheader">Our Best Writers...</h1>
         <div class="writer1">
             <div class="shadow"></div>
+            <a id="w1txt">
             <h1 class="ac1txt">Creativity Is a Process, Not an Event</h1>
+            </a>
         </div>
         <div class="writer2">
             <div class="shadow2"></div>
-            <h1 class="ac2txt">How To Be Happy When Everything Goes Wrong</h1>
+            
+            <h1 class="ac2txt"><a id="w2txt" href="#ello">How To Be Happy When Everything Goes Wrong</a></h1>
         </div>
         <div class="writer3">
+            <a id="w3txt">
             <div class="shadow3"></div>
             <h1 class="ac3txt">This Zen Concept Will Help You Stop Being...</h1>
+            </a>
         </div>
         <div class="writer4">
             <div class="shadow4"></div>
+            <a id="w4txt">
             <h1 class="ac4txt">The Ultimate Productivity Hack...</h1>
+            </a>
         </div>
         <div class="Topmorewriter">
             <div class="shadow5"></div>
@@ -191,6 +197,7 @@
         
         db.settings({timestampsInSnapshots : true })
     </script>
+    <script src="firebase copy.js"></script>
     <script src="navauth.js"></script>
     <script>
         var prevScrollpos = window.pageYOffset;

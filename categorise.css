@@ -75,11 +75,19 @@ ol{
     top: 250px;
     left: 10px;
     font-size: 60px;
+    font-weight: 500;
     color: black;
     text-shadow: 5px 5px 20px rgb(66, 66, 66);
     transition: 1s;
     /* background: #C4C4C4; */
 }
+
+/* .ac1txt{
+    white-space: nowrap; 
+    height: 0px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+} */
 
 .shadow{
     height: 500px;
@@ -100,6 +108,7 @@ ol{
 .ac1txt:hover{
     color: rgb(255, 255, 255);
     filter: brightness(100%);
+    font-style: italic;
 }
 
 
@@ -313,3 +322,33 @@ a{
     background-position-x: -150px;
     background-position-y: -20px;
 }
+
+
+
+.form{
+    background-color: rgb(148, 148, 148);
+}
+
+.form{
+    padding-left: 50%;
+}
+
+input[type=submit] {
+    width: 10%;
+    font-size: 20px;
+    background-color: #000000;
+    color: rgb(118, 118, 118);
+    padding: 34px 50px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #f2ff00;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+  }
+  

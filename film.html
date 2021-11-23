@@ -70,8 +70,27 @@
     <section class="hero1">
     <h1 class="pagetitle" id="entertainment">Entertainment</h1>
 </section>
-    <section class="articles" id="toparticles">
-    </section>
+<section class="articles" id="toparticles">
+    <div class="Article1">
+          <div class="shadow"></div><a class="ac1txt" id="ac1txt">...</a>
+            </div>
+       <div class="Article2">
+          <div class="shadow2"></div>
+         <a id="ac2txt" class="ac2txt">How To Be Happy When Everything Goes Wrong</a>
+        </div>
+        <div class="Article3">
+         <div class="shadow3"></div>
+          <a id="ac3txt" class="ac3txt">This Zen Concept Will Help You Stop Being...</a>
+            </div>
+       <div class="Article4">
+       <div class="shadow4"></div>
+       <a id="ac4txt" class="ac4txt">The Ultimate Productivity Hack...</a>
+       </div>
+    <!-- <div class="Topmore">
+       <div class="shadow5"></div>
+       <a href="toprated.html" class="more">More...</a>
+     </div> -->
+</section>
     <script>
         var config = {
             apiKey: "AIzaSyDXen9kHSiu3qFQnjupLdpPGluv1KpL5TU",
@@ -87,8 +106,9 @@
         const  auth = firebase.auth();
         db.settings({timestampsInSnapshots : true })
     </script>
-    <script type="module" src="firebase.js"></script>
+    <script type="module" src="categoryfirebase.js"></script>
     <script src="navauth.js"></script>
+    <script src="submitfirebase.js"></script>
     <script>
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
