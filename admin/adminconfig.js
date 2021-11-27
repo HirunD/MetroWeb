@@ -6,11 +6,10 @@ const fail = document.querySelector('#changetxt');
 const load = document.querySelector('#loading');
 
 visibility.style.display = "none";
-load.style.display = "none";
 
 
-password.addEventListener('submit', async(e) => {
-    e.preventDefault();
+password.addEventListener('submit', (e) => {
+    e.preventDefault()
     // await console.log(password.passw.value);
     if (password.passw.value == "8456") {
         console.log("sucess");

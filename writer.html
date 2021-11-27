@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <title>flLummWIxnLysRZjk9hy</title>
+    <link rel="stylesheet" href="article.css">
+    <link rel="stylesheet" href="universal.css">
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="stylesheet" href="writter.css">
+    
+</head>
+<body>
+    <nav id="navbar">
+        <div class = "logo">Logo <br>goes <br>here</div>
+        <h1>METROWEB</h1>
+        <div class = "media">
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank"><div class="insta"></div></a></li>
+                <li><a href="https://twitter.com" target="_blank"><div class = "twitter"></div></a></li>
+            </ul>
+        </div>
+        <ul class = "links">        
+            <li><a href="index.html" class="item">Home</a></li>
+            <div class="dropdown">
+                <li><p class="item"> Catagories ≣</p></li>
+                <div class="content" id = "content">
+                    <a href="tech.html" class="c1">Technology</a>
+                    <a href="film.html">Entertainment</a>
+                    <a href="Expo.html">Expo</a>
+                    <a href="sports.html">Sports</a>
+                </div>
+            </div>
+            <li><a href="about.html" class="item">About</a></li>
+        </ul>
+    </nav>
+    <div id="cursor"></div>
+    </section>
+    <div class="background"></div>
+    <section class="main">
+    <section class="bannersection">
+        <div class="banner">
+            <img class="bannerimg" id="bannerimg" src="images/articles/creativity.jpg">
+            <h1 class="profilename" id="pname"></h1>
+        </div>
+    </section>
+    <section class="writter" >
+        <ul>
+            <li>article - 1</li>
+            <li>article - 1</li>
+            <li>article - 1</li>
+            <li>article - 1</li>
+            <li>article - 1</li>
+            <li>article - 1</li>
+            <li>article - 1</li>
+        </ul>
+    </section>
+</section>
+    <div class="emptyplaceholder"></div>
+    <section class="share">
+        <hr class="devider">
+        <ul class = "share-items">
+        <li><h3 class = "shareit">Share</h3></li>
+        <li><ul class = "share-icons">
+            <li><a href="https://www.instagram.com"><div class="insta"></div></a></li>
+            <li><a href="https://www.twitter.com"><div class ="twitter"></div></a></li>
+        </ul>
+    </li>
+        </ul>
+        <hr class="devider">
+        <div class="emptyplaceholder"></div>
+    </section>
+    <section class="form">
+        <a class="formlink" href="form.html">You Like Him... Be like him now</a>
+    </section>
+
+    <script>
+        var config = {
+            apiKey: "AIzaSyDXen9kHSiu3qFQnjupLdpPGluv1KpL5TU",
+            authDomain: "metroweb-71c1e.firebaseapp.com",
+            databaseURL: "https://metroweb-71c1e-default-rtdb.firebaseio.com",
+            projectId: "metroweb-71c1e",
+            storageBucket: "metroweb-71c1e.appspot.com",
+            messagingSenderId: "562591951959",
+            appId: "1:562591951959:web:187ee7a5742ff8049a0712"
+        };
+        firebase.initializeApp(config);
+        const  db = firebase.firestore();
+        db.settings({timestampsInSnapshots : true })
+    </script>
+    <script type="module" src="writerfirebase.js"></script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-80px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+</body>
+</html>
