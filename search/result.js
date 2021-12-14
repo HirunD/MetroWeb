@@ -1,51 +1,57 @@
 let url = window.location.href;
-let page = url.split("?")[1].split('%20').join(' ');
+const searchitem = url.split("=")[1].split('%20').join(' ').toLocaleLowerCase();
 
-// //getting data
-// db.collection('MetroWeb')
-// // .includes (page)
-// .get()
-// .then(function(doc) {
-//   if (doc.exists) {
-//     console.log("Document data:", doc.data());
-//     // renderTitle(doc);
-//   } else {
-//     // doc.data() will be undefined in this case
-//     console.log("No such document!");
-//   }
-// }).catch(function(error) {
-//   console.log("Error getting document:", error);
-// });
+const form = document.getElementById('get_search');
 
+form.addEventListener('submit', (e) => {
+  // e.window.location.href = "../../search.html?", form.search.value;
+  console.log("../../search.html?", form.search.value)
+})
 
+const button = document.getElementById("click");
 
-// function getdata() {
-  const BoardsArray = [];
-  db.collection("MetroWeb")
-        // .limit(10)
-        .get()
-        .then(docs => {
-          var array = []
-          docs.forEach((doc, index) => {
-            BoardsArray.push(doc.data());
-          });
-        })
-
-
-        console.log(BoardsArray)
-
-        const results = BoardsArray.indexOf('ef');
-        console.log(results)
-          
-
-          if (BoardsArray.indexOf('[0]')) {
-            // console.log(array[0], index);
-            console.log("sucess")
-            
-            const title = document.getElementById('results')
-
-            title.textContent = BoardsArray.content;
-          } else {
-            console.log('no search results');
+  db.collection('MetroWeb').get().then(snapshot => {
+      snapshot.docs.forEach(async(doc) => {
+          try{
+              const d = await doc.data();
+              if(d.category.article.a_content.toLowerCase().includes(searchitem)){
+                  console.log(d);
+                  tableCreate(d);
+              }else{
+                  console.error("D failed")
+              }
+          }catch(err){
+              console.error(err);
           }
-// }
+  }).catch(err => {
+      console.error(err)
+  })
+});
+
+var table = [];
+
+  function tableCreate(d) {
+    table.push(d.category.article.a_name);
+    console.log(table);  
+    createTable(table);
+
+    // createTable(array);
+  }
+
+  const productContainer = document.getElementById("productContainer");
+
+  var array = Object.keys(table);
+
+  // createTable(array);
+
+  function createTable(data) {
+    if (data) {
+      productContainer.innerHTML = "";
+      console.log(data);
+      Object.values(data).map(item => {
+        productContainer.innerHTML += 
+        data;
+      }
+      )
+    }
+  }

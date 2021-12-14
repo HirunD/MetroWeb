@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>results</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Search</title>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"></script>
-    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-auth.js"></script>
 </head>
+
 <body>
-    <section class="hero">
-        <button id="click">hello</button>
-        <div>
-            <h1 id="name"></h1>
+    <form id="get_search">
+        <input type="text" name="search" list="searchlist">
+        <input type="submit" value="Submit" id="click">
+
+        <datalist id="searchlist">
+            <option value="The Flash returns this Tuesday with Armageddon 5-part event"></option>
+        </datalist>
+    </form>
+    <div >
+        <div id="productContainer">
+            
         </div>
-        </section>
-        <section class="results">
-            <div>
-                <img src="/images/cetgoriese/tech/banner.gif" alt="">
-            </div>
-        </section>
+    </div>
+
     <script>
         var config = {
             apiKey: "AIzaSyDXen9kHSiu3qFQnjupLdpPGluv1KpL5TU",
@@ -37,9 +39,9 @@
         };
         firebase.initializeApp(config);
         const  db = firebase.firestore();
-        const auth = firebase.auth();
         db.settings({timestampsInSnapshots : true })
     </script>
-    <script src="result.js"></script>
+    <script type="module" src="result.js"></script>
 </body>
+
 </html>
