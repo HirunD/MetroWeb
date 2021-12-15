@@ -1,0 +1,99 @@
+html{
+    background-color: rgb(17, 17, 17);
+    color: yellow;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.card{
+    background-color: yellow;
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 100px;
+    margin-top: 50px;
+    border-radius: 20px;
+    color: black;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.searchr{
+    margin-left: 200px;
+    margin-top: 20px;
+    font-size: 50px;
+    color: black;
+}
+
+.seachr2{
+    text-align: justify;
+    width: auto;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+
+.card:hover{
+    transform: scale(101%);
+    height: 300px;
+}
+
+input[type=text] {
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.857);    
+    color: rgb(72, 72, 72);
+    width: 700px;
+    height: 54px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:40px auto;
+    transition:background-color 200ms;
+    /* box-shadow:5px 7px 8px #111; */
+    transition:transform 800ms, background-color 800ms ease-in-out;
+    box-shadow: 0px 0px 30px 5px black;
+  }
+
+
+input[type=text]:hover{
+    transform: scale(110%);
+    color: black;
+    background-color:rgb(255, 255, 255);
+
+}
+
+input:focus{
+    background-color:rgb(255, 255, 255);
+}
+
+
+
+.searchico{
+    height: 40px;
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    transition: 0.5s;
+}
+
+input:hover + .searchico{
+    right: 26%;
+}
+
+input:focus + .searchico{
+    right: 30%;
+    /* top: 7%; */
+    /* height: 30px; */
+}
+
+
+.searchico:hover{
+    right: 26%;
+}
+
+
+.search{
+    position: sticky;
+    top: 10px;
+}

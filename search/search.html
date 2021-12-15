@@ -8,22 +8,57 @@
     <title>Search</title>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-auth.js"></script>
+    <link rel="stylesheet" href="search.css">
 </head>
 
 <body>
-    <form id="get_search">
+    <form id="get_search" class="search">
         <input type="text" name="search" list="searchlist">
-        <input type="submit" value="Submit" id="click">
-
+        <img src="https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png" alt="" class="searchico" id="click">
         <datalist id="searchlist">
             <option value="The Flash returns this Tuesday with Armageddon 5-part event"></option>
         </datalist>
     </form>
     <div >
-        <div id="productContainer">
-            
+        <div class="card">
+            <h2 class="searchr" id="productContainer1">...</h2>
+            <h2 class="seachr2" id="context1">...</h2>
+        </div>
+        <div class="card">
+            <h2 class="searchr" id="productContainer2">...</h2>
+            <h2 class="seachr2" id="context2">...</h2>
+        </div>
+        <div class="card">
+            <h2 class="searchr" id="productContainer3">...</h2>
+            <h2 class="seachr2" id="context3">...</h2>
+        </div>
+        <div class="card">
+            <h2 class="searchr" id="productContainer4">...</h2>
+            <h2 class="seachr2" id="context4">...</h2>
+        </div>
+        <div class="card">
+            <h2 class="searchr" id="productContainer5">...</h2>
+            <h2 class="seachr2" id="context5">...</h2>
+        </div>
+        <div class="card">
+            <h2 class="searchr" id="productContainer6">...</h2>
+            <h2 class="seachr2" id="context6">...</h2>
+        </div>
+        <div class="card">
+            <h2 class="searchr" id="productContainer7">...</h2>
+            <h2 class="seachr2" id="context7">...</h2>
+        </div>
+        <div class="card">
+            <h2 class="searchr" id="productContainer8">...</h2>
+            <h2 class="seachr2" id="context8">...</h2>
+        </div>
+        <div class="card">
+            <h2 class="searchr" id="productContainer9">...</h2>
+            <h2 class="seachr2" id="context9">...</h2>
         </div>
     </div>
 
@@ -39,9 +74,11 @@
         };
         firebase.initializeApp(config);
         const  db = firebase.firestore();
+        const auth = firebase.auth();
         db.settings({timestampsInSnapshots : true })
     </script>
     <script type="module" src="result.js"></script>
+    <script src="search.js"></script>
 </body>
 
 </html>

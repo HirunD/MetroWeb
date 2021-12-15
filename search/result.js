@@ -1,57 +1,63 @@
 let url = window.location.href;
 const searchitem = url.split("=")[1].split('%20').join(' ').toLocaleLowerCase();
 
-const form = document.getElementById('get_search');
-
-form.addEventListener('submit', (e) => {
-  // e.window.location.href = "../../search.html?", form.search.value;
-  console.log("../../search.html?", form.search.value)
-})
-
-const button = document.getElementById("click");
-
   db.collection('MetroWeb').get().then(snapshot => {
       snapshot.docs.forEach(async(doc) => {
           try{
               const d = await doc.data();
               if(d.category.article.a_content.toLowerCase().includes(searchitem)){
-                  console.log(d);
+                  console.log("match found ",d);
                   tableCreate(d);
               }else{
-                  console.error("D failed")
+                  console.log("D failed")
               }
           }catch(err){
-              console.error(err);
           }
-  }).catch(err => {
-      console.error(err)
   })
 });
 
-var table = [];
+
+  var names = [];
+  var contents = [];
 
   function tableCreate(d) {
-    table.push(d.category.article.a_name);
-    console.log(table);  
-    createTable(table);
-
-    // createTable(array);
+    console.log("recived");
+    names.push(d.category.article.a_name);
+    console.log(d);
+    console.log(contents);
+    contents.push(d.category.article.a_content);
+    createTable(names);
   }
 
-  const productContainer = document.getElementById("productContainer");
+  const productContainer1 = document.getElementById("productContainer1");
+  const productContainer2 = document.getElementById("productContainer2");
+  const productContainer3 = document.getElementById("productContainer3");
+  const productContainer4 = document.getElementById("productContainer4");
+  const productContainer5 = document.getElementById("productContainer5");
+  const productContainer6 = document.getElementById("productContainer6");
 
-  var array = Object.keys(table);
+  const context1 = document.getElementById("context1");
+  const context2 = document.getElementById("context2");
+  const context3 = document.getElementById("context3");
+  const context4 = document.getElementById("context4");
+  const context5 = document.getElementById("context5");
+  const context6 = document.getElementById("context6");
 
-  // createTable(array);
 
-  function createTable(data) {
-    if (data) {
-      productContainer.innerHTML = "";
-      console.log(data);
-      Object.values(data).map(item => {
-        productContainer.innerHTML += 
-        data;
-      }
-      )
+  function createTable(names) {
+    console.log("here");
+    if (names) {
+      console.log("contain", names);
+      productContainer1.textContent = names[0];
+      productContainer2.textContent = names[1];
+      productContainer3.textContent = names[2];
+      productContainer4.textContent = names[3];
+      productContainer5.textContent = names[4];
+      
+      context1.textContent = contents[0];
+      context2.textContent = contents[1];
+      // context3.textContent = contents[2];
+      // context4.textContent = contents[3];
+      // context5.textContent = contents[4];
     }
   }
