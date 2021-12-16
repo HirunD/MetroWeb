@@ -710,7 +710,7 @@ a{
    
 .toparticles {
     position: relative;
-    height: 1500px;
+    height: 762px;
     overflow: hidden;
 }
 
@@ -757,36 +757,36 @@ input {
 
 
 /*screen 2 */
-
-@media only screen and (max-width:1011px) {
+/* 
+@media only screen and (max-width:1011px) { */
     .Article2{
-        left: 30px;
+        left: 900px;
         bottom: -20px;
     }
     .Article3{
-        bottom: 100px;
+        bottom: -100px;
         left: 530px;
     }
     .Topmore{
         bottom: 200px;
     }
-    .Article4{
-        left: 130px;
-    }
     .writer2{
-        left: 30px;
+        left: 40px;
         bottom: -20px;
     }
     .writer3{
-        left: 530px;
+        left: 1030px;
         bottom: 100px;
     }
     .writer4{
-        left: 130px;
+        left: 230px;
         transform: scale(110%);
     }
 
     .Topmorewriter{
         bottom: 200px;
     }
-}
+    .writers{
+        height: 1500px;
+    }
+/* } */

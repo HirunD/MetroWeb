@@ -1,3 +1,4 @@
+// 
 let url = window.location.href;
 const searchitem = url.split("=")[1].split('%20').join(' ').toLocaleLowerCase();
 
@@ -43,6 +44,11 @@ const searchitem = url.split("=")[1].split('%20').join(' ').toLocaleLowerCase();
   const context5 = document.getElementById("context5");
   const context6 = document.getElementById("context6");
 
+  const links = document.getElementsByClassName("result-a");
+
+
+
+  console.log(links);
 
   function createTable(names) {
     console.log("here");
@@ -59,5 +65,9 @@ const searchitem = url.split("=")[1].split('%20').join(' ').toLocaleLowerCase();
       // context3.textContent = contents[2];
       // context4.textContent = contents[3];
       // context5.textContent = contents[4];
+
+      links[0].setAttribute('href', "../article.html?" + names[0]);
+      links[1].setAttribute('href', "../article.html?" + names[1]);
+      links[2].setAttribute('href', "../article.html?" + names[2]);
     }
   }

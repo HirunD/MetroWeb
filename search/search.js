@@ -8,7 +8,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   window.location.href = "../search/search.html?search=" + form.search.value;
   // console.log("../../search.html?", form.search.value);
-  console.log("done", form.search.value);
+  // console.log("done", form.search.value);
   form.search.value = "";
 });
 
