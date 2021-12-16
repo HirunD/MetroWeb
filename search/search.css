@@ -82,7 +82,7 @@ input:hover + .searchico{
 }
 
 input:focus + .searchico{
-    right: 30%;
+    right: 26%;
     /* top: 7%; */
     /* height: 30px; */
 }
@@ -95,5 +95,5 @@ input:focus + .searchico{
 
 .search{
     position: sticky;
-    top: 10px;
+    top: 70px;
 }

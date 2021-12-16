@@ -20,16 +20,23 @@ document.addEventListener('mousemove'
 }
 )
 
+// const form = document.getElementById("get_search");
+// let url = window.location.href;
+// const searchitem = url.split("=")[1].split('+').join(' ');
+
+// form.addEventListener("submit", (e) => {
+//   e.window.location.href = "../../search.html?", form.search.value;
+// });
 
 
-const searchPara = document.querySelector('form');
+// const searchPara = document.querySelector('form');
 
-searchPara.addEventListener('submit', (e) =>{
-    e.preventDefault();
-    const searchword = searchPara.search.value;
+// searchPara.addEventListener('submit', (e) =>{
+//     e.preventDefault();
+//     const searchword = searchPara.search.value;
 
-    window.location.href = "/search/results.html?" + searchword;
-})
+//     window.location.href = "/search/results.html?" + searchword;
+// })
 
 
 // window.onload = function(){ document.getElementById("loading").style.display = "none" }

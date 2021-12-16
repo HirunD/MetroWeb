@@ -2,9 +2,14 @@ const form = document.getElementById("get_search");
 let url = window.location.href;
 const searchitem = url.split("=")[1].split('+').join(' ');
 
+console.log(form);
+
 form.addEventListener("submit", (e) => {
-  // e.window.location.href = "../../search.html?", form.search.value;
-  console.log("../../search.html?", form.search.value);
+  e.preventDefault();
+  window.location.href = "../search/search.html?search=" + form.search.value;
+  // console.log("../../search.html?", form.search.value);
+  console.log("done", form.search.value);
+  form.search.value = "";
 });
 
 const button = document.getElementById("click");

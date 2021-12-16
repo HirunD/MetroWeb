@@ -280,14 +280,7 @@ nav .links {
       font-size: 45px;
   }
 
-  input {
-    all: unset;
-    font: 16px arial;
-    color: #111;
-    height: 100%;
-    width: 100%;
-    padding: 6px 10px;
-  }
+  
   ::placeholder {
     color: #fff;
     opacity: 0.7; 

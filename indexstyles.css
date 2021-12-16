@@ -746,6 +746,14 @@ a{
 
 }
 
+input {
+    all: unset;
+    font: 16px arial;
+    color: #111;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
 
 
 /*screen 2 */
