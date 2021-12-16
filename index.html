@@ -2,12 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href= "assests/logo/logo.png">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MetroWeb</title>
-    <link rel="stylesheet" href="coming_soon.css">
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!-- <script> 
@@ -15,6 +9,9 @@
     onsole.log(defaultapp.name);  // "[DEFAULT]" 
     </script> -->
     <link rel="stylesheet" href="navstyle.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" type="image/png" href= "assests/logo/logo.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -25,7 +22,7 @@
     <link rel="stylesheet" href="universal.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-    <!-- <title>MetroWeb</title> -->
+    <title>MetroWeb</title>
     <link rel="stylesheet" href="indexstyles.css">
     <script type="module" src="app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
@@ -34,15 +31,186 @@
     <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/9.2.0/firebase-auth.js"></script>
+    <link rel="stylesheet" href="search/search.css">
 </head>
 <body>
-    <div id="cursor"></div>
-    <!-- <img src="assests/logo/Asset 1.svg" alt=""> -->
-    <!-- <h1>comming soon</h1> -->
-    <div class="wrapper">
-        <div class="typing-demo">
-          <h1>Comming Soon...</h1>
+<!--     <div class="loading" id="loading">
+        <img src="assests/logo/Asset 1.svg" alt=""></div>
+        <div class="loader"></div> -->
+   <div id="cursor"></div>
+    <!-- <section class="hero" id="hero">
+
+    </section> -->
+    <nav id="navbar">
+        <div class = "logo"><img src="assests/logo/Asset 1.svg" alt="MetroWeb"></div>
+        <h1>METROWEB</h1>
+        <div class = "media">
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank"><div class="insta"></div></a></li>
+                <li><a href="https://twitter.com" target="_blank"><div class = "twitter"></div></a></li>
+            </ul>
         </div>
+        <ul class = "links">        
+            <li><a href="index.html" class="item">Home</a></li>
+            <div class="dropdown">
+                <li><p class="item"> Catagories ≣</p></li>
+                <div class="content" id = "content">
+                    <a href="tech.html" class="c1">Technology</a>
+                    <a href="film.html">Entertainment</a>
+                    <a href="Expo.html">Expo</a>
+                    <a href="sports.html">Sports</a>
+                </div>
+            </div>
+            <div class = "sign-drop" id = "not-logged">
+                <li>Join Us</li>
+                <div id="signsection" class="sign-op">
+                    <a href="log/sign/sign_up.html">Sign Up</a>
+                    <a href="log/sign/log_in.html">Log in</a>
+                </div>
+            </div>
+            <li id = "logged"><a href="form.html">Submit</a></li>
+            <li><a href="about.html" class="item">About</a></li>
+            <li id = "logout"><a href="">logout</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <div class = "hero">
+            <h1>
+                WELCOME TO METROWEB
+            </h1>
+            <h3>Your one stop Portal <br> To everything</h3>
+            <form method="get" id="get_search" class="search">
+                <input type="text" name="search">
+                <img src="https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png" alt="" class="searchico" id="click">
+                <!-- <datalist id="searchlist">
+                    <option value="The Flash returns this Tuesday with Armageddon 5-part event"></option>
+                </datalist> -->
+            </form>
+                <div class = "app">
+                    <h4>
+                        Download our app
+                    </h4>
+                    <img src="images/nav/platforms.png" alt="Platforms">
+                </div>
+                <a class="explore" href="#toparticles">
+                    Explore
+                </a>
+        </div>
+    </main>
+    <section class="articles" id="toparticles">
+        <div class="Article1">
+              <div class="shadow"></div><a class="ac1txt" id="ac1txt">...</a>
+                </div>
+           <div class="Article2">
+              <div class="shadow2"></div>
+              <a class="ac2txt" id="ac2txt">...</a>
+            </div>
+            <div class="Article3">
+             <div class="shadow3"></div>
+             <a class="ac3txt" id="ac3txt">...</a>
+                </div>
+           <div class="Article4">
+           <div class="shadow4"></div>
+           <a class="ac4txt" id="ac4txt">...</a>
+           </div>
+        <!-- <div class="Topmore">
+           <div class="shadow5"></div>
+           <a href="toprated.html" class="more">More...</a>
+         </div> -->
+    </section>
+    </section>
+    <section class="categories" id="categories">
+        <h1 class="cheader">Categories...</h1>
+        <ul id="list">
+            <a href="film.html"><li class="c"><span class="span" id="span1"> Entertainment</span></li></a>
+            <a href="tech.html"><li class="c"><span class="span" id="span2"> Technology</span></li></a>
+            <a href="sports.html"> <li class="c"><span class="span" id="span3">Sports</span> </li></a>
+            <a href="Expo.html"><li class="c"><span class="span" id="span4">Expo</span></li></a>
+            <!-- <li class="c"><span class="span" id="span5">anything new</span></li> -->
+        </ul>
     </div>
-</body>
+        <!-- <div class="coptional"></div> -->
+    </section>
+    <section class="writers" id="writers">
+        <h1 class="writersheader">Our Best Writers...</h1>
+        <div class="writer1">
+            <div class="shadow"></div>
+            <a id="w1txt">
+            <h1 class="ac1txt">Creativity Is a Process, Not an Event</h1>
+            </a>
+        </div>
+        <div class="writer2">
+            <div class="shadow2"></div>
+            
+            <h1 class="ac2txt"><a id="w2txt" href="#ello">How To Be Happy When Everything Goes Wrong</a></h1>
+        </div>
+        <div class="writer3">
+            <a id="w3txt">
+            <div class="shadow3"></div>
+            <h1 class="ac3txt">This Zen Concept Will Help You Stop Being...</h1>
+            </a>
+        </div>
+        <div class="writer4">
+            <div class="shadow4"></div>
+            <a id="w4txt">
+            <h1 class="ac4txt">The Ultimate Productivity Hack...</h1>
+            </a>
+        </div>
+        <div class="Topmorewriter">
+            <div class="shadow5"></div>
+            <a href="toprated.html" class="morewriter">More...</a>
+        </div>
+    </section>
+    <section class="entertainment" id="entertainment">
+        
+    </section>
+    <!-- <footer>
+        <div class="footer-content">
+            <h2>MetroWeb</h2>
+            <p>hello there....weerererfhello there....weerererfhello there....weerererfhello there....weerererfhello there....weerererfhello there....weerererfhello there....weerererf</p>
+            <ul class="socails">
+                <li><a href="#"><img style="width: 50px; height: 50px;" src="images/nav/instagrame.svg"></a></li>
+                <li><a href="#"><img style="width: 50px; height: 50px;" src="images/nav/twitter no color.svg"></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>MetroWeb prodly presents</p>
+        </div>
+    </footer> -->
+    <section class="footer" id="footer">
+        
+    </section>
+    <script>
+        var config = {
+            apiKey: "AIzaSyDXen9kHSiu3qFQnjupLdpPGluv1KpL5TU",
+            authDomain: "metroweb-71c1e.firebaseapp.com",
+            databaseURL: "https://metroweb-71c1e-default-rtdb.firebaseio.com",
+            projectId: "metroweb-71c1e",
+            storageBucket: "metroweb-71c1e.appspot.com",
+            messagingSenderId: "562591951959",
+            appId: "1:562591951959:web:187ee7a5742ff8049a0712"
+        };
+        firebase.initializeApp(config);
+    
+        const auth = firebase.auth();
+        const  db = firebase.firestore();
+        
+        db.settings({timestampsInSnapshots : true })
+    </script>
+    <script src="firebase copy.js"></script>
+    <script src="navauth.js"></script>
+    <script src="search/search.js"></script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-80px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
 </html>
