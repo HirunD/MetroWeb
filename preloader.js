@@ -6,6 +6,6 @@ loading();
 function loading() {
     setTimeout(function () {
         loader.style.display = "none"
-     }, 2000)
+     }, 6050)
 }
 // loader.

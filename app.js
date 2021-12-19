@@ -20,6 +20,9 @@ document.addEventListener('mousemove'
 }
 )
 
+
+
+
 // const form = document.getElementById("get_search");
 // let url = window.location.href;
 // const searchitem = url.split("=")[1].split('+').join(' ');

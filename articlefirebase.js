@@ -43,7 +43,11 @@ function renderTitle(doc){
   byname.textContent = doc.data().category.article.a_posted_by;
 }
 
+// console.log(db.collection('MetroWeb').get().data());
+
 //getting data
+
+
 db.collection('MetroWeb').doc(page)
 .get()
 .then(function(doc) {

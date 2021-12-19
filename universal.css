@@ -57,7 +57,7 @@
   transform: translate(-50%, -50%);
   border-radius: 50%;
   pointer-events: none;
-  z-index: 10;
+  z-index: 10000;
   backdrop-filter: invert(100%);
   /* animation-name: example; */
   /* animation-iteration-count: infinite; */
