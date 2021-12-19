@@ -16,6 +16,44 @@ form.style.display = "block";
 massage.style.display = "none";
 
 
+
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+    var uid = user.uid;
+    console.log(uid);
+    getDetails(uid);
+    // ...
+  } else {
+    // User is signed out
+    console.log("nothing");
+    // ...
+  }
+});
+
+var creator = "";
+
+function getDetails(user) {
+  db.collection('users').doc(user)
+.get()
+.then(function(doc) {
+  if (doc.exists) {
+    console.log("Document data:", doc.data());
+    creator = doc.data().Userinfo.Username;
+    console.log(creator);
+    // renderTitle(doc);
+  } else {
+    // doc.data() will be undefined in this case
+    console.log("No such document!");
+  }
+}).catch(function(error) {
+  console.log("Error getting document:", error);
+});
+}
+
+
+
 form.addEventListener('submit', async(e) => {
     e.preventDefault();
     // window.location('index.html');
@@ -23,7 +61,7 @@ form.addEventListener('submit', async(e) => {
       category :{
         article:{
         a_name: form.title.value,
-        a_posted_by: form.name.value,
+        a_posted_by: creator,
         a_content: form.context.value,
         a_tags: form.tag.value,
         a_date: form.date.value

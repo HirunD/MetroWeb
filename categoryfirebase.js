@@ -1,7 +1,17 @@
 
 // // const tile5 = document.querySelector('#ac5txt');
-const page = document.title.toLocaleLowerCase();
+var page = document.title.toLocaleLowerCase();
 
+if (page == "technology") {
+  console.log("tech");  
+  page = "tech"
+}if (page == "entertainment") {
+  console.log("ent");
+  page = "entertainment";
+} if (page == "space exploration") {
+  console.log("none");
+  page = "space-expo";
+} 
 console.log(page);
 
 

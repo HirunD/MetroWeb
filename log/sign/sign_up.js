@@ -12,7 +12,10 @@ signupform.addEventListener('submit',(e) =>{
         auth.createUserWithEmailAndPassword(email, pasword)
   .then((cred) => {
     db.collection('users').doc(cred.user.uid).set({
-      name: signupform['name'].value
+     Userinfo : { 
+       name: signupform['name'].value,
+       Username : signupform['uname'].value,
+      }
     })
     signupform.name.value = '';
     signupform.signup_email.value = '';

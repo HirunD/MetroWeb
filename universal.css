@@ -23,14 +23,14 @@
 
   html{
     scroll-behavior: smooth;
-    cursor: none;
+    /* cursor: none; */
   }
 
 .preloader{
   top: 0px;
   position: fixed;
-  background-image: url(assests/loader/loading.gif);
-  background-position-y: 1100px;
+  background-image: url(assests/loader/Comp\ 1_1.gif);
+  background-position-y: center;
   background-size: cover;
   height: 100%;
   width: 100%;
