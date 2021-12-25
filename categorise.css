@@ -60,7 +60,7 @@ ol{
     height: 500px;
     border-radius: 10%;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url(images/articles/creativity.jpg);
+    background-image: url(images/articles/creativity.png);
     background-position: -300px;
     background-size: 200%;
     background-repeat: no-repeat;
@@ -128,7 +128,7 @@ ol{
     height: 250px;
     border-radius: 10%;
     background-color: #C4C4C4;
-    background-image: url(images/articles/happy.jpg);
+    background-image: url(images/articles/happy.png);
     background-position: -150px    0px;
     background-size: 160%;
     background-repeat: no-repeat;
@@ -186,7 +186,7 @@ ol{
     height: 200px;
     border-radius: 10%;
     background-color: #C4C4C4;
-    background-image: url(images/articles/zen.jpg);
+    background-image: url(images/articles/zen.png);
     background-size: 160%;
     background-position: -10px -20px;
     background-repeat: no-repeat;
@@ -242,7 +242,7 @@ ol{
     height: 250px;
     border-radius: 10%;
     background-color: #C4C4C4;
-    background-image: url(images/articles/entertainment.jpg);
+    background-image: url(images/articles/entertainment.png);
     background-size: 160%;
     background-position: -50px -20px;
     background-repeat: no-repeat;
@@ -282,7 +282,7 @@ ol{
     height: 200px;
     border-radius: 10%;
     background-color: #ffffff;
-    background-image: url(images/articles/more.jpg);
+    background-image: url(images/articles/more.png);
     background-repeat: no-repeat;
     background-size: 150%;
     background-position-x: -100px;

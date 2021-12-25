@@ -54,6 +54,11 @@
 }
 
 
+.articles{
+    overflow: hidden;
+    height: 762px;
+}
+
 
 .Article1{
     position: relative;
@@ -63,7 +68,7 @@
     height: 500px;
     border-radius: 10%;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url(images/articles/creativity.jpg);
+    background-image: url(images/articles/creativity.png);
     background-position: -300px;
     background-size: 200%;
     background-repeat: no-repeat;
@@ -122,7 +127,7 @@
     height: 250px;
     border-radius: 10%;
     background-color: #C4C4C4;
-    background-image: url(images/articles/happy.jpg);
+    background-image: url(images/articles/happy.png);
     background-position: -150px    0px;
     background-size: 160%;
     background-repeat: no-repeat;
@@ -179,7 +184,7 @@
     height: 200px;
     border-radius: 10%;
     background-color: #C4C4C4;
-    background-image: url(images/articles/zen.jpg);
+    background-image: url(images/articles/zen.png);
     background-size: 160%;
     background-position: -10px -20px;
     background-repeat: no-repeat;
@@ -235,7 +240,7 @@
     height: 250px;
     border-radius: 10%;
     background-color: #C4C4C4;
-    background-image: url(images/articles/entertainment.jpg);
+    background-image: url(images/articles/entertainment.png);
     background-size: 160%;
     background-position: -50px -20px;
     background-repeat: no-repeat;
@@ -275,7 +280,7 @@
     height: 200px;
     border-radius: 10%;
     background-color: #ffffff;
-    background-image: url(images/articles/more.jpg);
+    background-image: url(images/articles/more.png);
     background-repeat: no-repeat;
     background-size: 150%;
     background-position-x: -100px;
@@ -405,7 +410,7 @@ ul{
     height: 500px;
     border-radius: 10%;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url(images/writers/man1.jpg);
+    background-image: url(images/writers/man1.png);
     background-position: -300px;
     background-size: 200%;
     background-repeat: no-repeat;
@@ -462,7 +467,7 @@ ul{
     height: 250px;
     border-radius: 10%;
     background-color: #C4C4C4;
-    background-image: url(images/writers/man2.jpg);
+    background-image: url(images/writers/man2.png);
     background-position: -150px    0px;
     background-size: 160%;
     background-repeat: no-repeat;
@@ -518,7 +523,7 @@ ul{
     height: 200px;
     border-radius: 10%;
     background-color: #C4C4C4;
-    background-image: url(images/writers/man5.jpg);
+    background-image: url(images/writers/man5.png);
     box-shadow: 0px 0px 60px black;
     background-size: 100%;
     background-position: 0px 0px;
@@ -574,7 +579,7 @@ ul{
     height: 250px;
     border-radius: 10%;
     background-color: #C4C4C4;
-    background-image: url(images/writers/man4.jpg);
+    background-image: url(images/writers/man4.png);
     box-shadow: 0px 0px 60px black;
     background-size: 170%;
     background-position: -50px -20px;
@@ -614,7 +619,7 @@ ul{
     height: 200px;
     border-radius: 10%;
     background-color: #ffffff;
-    background-image: url(images/articles/more.jpg);
+    background-image: url(images/articles/more.png);
     box-shadow: 0px 0px 60px black;
     background-repeat: no-repeat;
     background-size: 150%;
@@ -665,6 +670,16 @@ a{
     background-color: rgb(2, 2, 2);
 }
 
+
+.animi{
+    animation: flow 5s infinite linear;
+}
+
+@keyframes flow {
+    0% {bottom: 600px;}
+    100% {bottom: 1300px;}
+    /* 100% {bottom: 600px;} */
+}
 
 /*screen 1 */
 
